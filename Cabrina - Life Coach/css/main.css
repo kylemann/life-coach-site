@@ -1,9 +1,11 @@
+/*////////////////////////////////////////////// 
+General Styling - Body, Links, Img, Logo, Lines
+///////////////////////////////////////////////*/
+
 * {
  box-sizing: border-box;   
     
 }
-
-
 
 body {
 font-family: 'Roboto', sans-serif;  
@@ -188,7 +190,7 @@ font-size: 2em;
 }
 
 .aqua {
-   background-color: #40DFF0;   
+   background-color: #52BFED;   
 }
 
 .dark-blue {
@@ -202,6 +204,10 @@ background-color: #E0E3E3;
 
 .white {
  background-color: white;   
+}
+
+.white-text {
+ color: white;   
 }
 
 /*//////////////////////////////////
@@ -226,19 +232,25 @@ line-height: 1.7;
 font-size: 1.75em;   
 }
 
-.text-display {
+.text-display, .text-display1 {
 text-align: center;
 font-size: 4em;
 color: #212B7A;
 }
 
 .narrow-text, .info-text, .cabrina-bio {
- padding: 20px 10px;   
+ padding: 20px 10px 40px 10px;   
+}
+
+.info-text h4 {
+ text-align: center;
+    
 }
 
 .narrow-text p, .narrow-text h4 {
 color: white; 
 }
+
 
 .register-button {
 padding: 10px 15px; 
@@ -292,6 +304,100 @@ height: 175px;
 z-index: -1;
 position: absolute;
 }
+
+
+/*//////////////////////////////////
+Life Coaching Services SECTION///////////////////
+//////////////////////////////////*/    
+ 
+.down-arrow {
+ width: 30px;
+    height: 30px;
+margin: 0 auto;
+}
+
+.goal-list {
+ padding: 25px 5px;
+    color: white;
+}
+
+.goal-list ul {
+ list-style: none;   
+  text-align: center;
+list-style-type: none;
+    margin: 0 auto;
+padding: 0;
+}
+
+.goal-list ul li {
+ margin: 15px auto;
+list-style-position: inside;
+}
+
+.direction-reverse {
+flex-direction: column-reverse;   
+}
+
+ /*//////////////////////////////////
+Section Breaks///////////////////
+//////////////////////////////////*/  
+    
+        
+        
+.cover {
+margin: 0 auto;
+width: 100%;
+/*height: 75vh;*/
+padding: 0;
+
+    }
+
+#cover1 {
+     background: url(../images/stockphoto1.jpg) no-repeat center center;
+-webkit-background-size: cover; 
+-moz-background-size: cover; 
+-o-background-size: cover; 
+background-size: cover;   
+}
+
+.section-break {
+ padding: 50px 10px;
+    color: white;
+ 
+}
+
+.section-break section {
+    z-index: 1;   
+}
+
+.section-break blockquote {
+ font-size: 1.15em;
+    line-height: 1.55;
+    
+}
+
+
+.section-break h4 {
+ text-align: center;   
+    
+}
+
+.quote {
+width: 35px;
+height: 35px;
+z-index: -1;
+position: relative;
+margin-bottom: -20px;
+}
+
+cite {
+ font-size: .9em;
+    line-height: 1.5;
+    
+}
+
+
+
 /*//////////////////////// //////////////////////
 ////////////////////////////////////////////////
 ////////////////////////////////////////////////
@@ -417,7 +523,7 @@ margin-right: 40px;
 .top-list li:last-child {
 /*    background-color: #D16758;  */
 /*    background-color: #79E885;*/
-    background-color: #40DFF0;
+    background-color: #52BFED;
     height: 100%;
     padding: 7px 20px;
     text-align: center;
@@ -521,6 +627,7 @@ DISCOVERY SECTION///////////////////
 
 .information {
 flex-direction: row;
+-webkit-flex-direction: row;
 }
     
 .text-display {
@@ -542,7 +649,7 @@ padding: 80px 10px;
     line-height: 1.85;
 }
     
-.text-display h5 {
+.rotate1 {
 
 font-size: 5rem;
 transform: rotate(270deg) ;
@@ -599,7 +706,7 @@ border-radius: 100%;
 .meet-coach {
 margin-left: auto;
 width: 50%;
-background-color: #40DFF0;
+background-color: #52BFED;
 padding: 80px 5px 30px 5px;
 color: white;
 border-bottom-left-radius: 4px;
@@ -619,5 +726,68 @@ height: 175px;
 z-index: -1;
 position: absolute;
 }
+    
+ /*//////////////////////////////////
+Life Coaching Services SECTION///////////////////
+//////////////////////////////////*/  
+
+.rotate {
+-webkit-transform: rotate(90deg);
+-moz-transform: rotate(90deg);
+-o-transform: rotate(90deg);   
+ font-size: 5rem;   
+}
+    
+    .goal-list {
+        padding: 80px 5px;
+     width: 25%;   
+        
+    }
+    
+        
+.text-display1 {
+ width: 25%; 
+padding: 20px 5px;
+}
+    
+.goal-list ul li {
+ margin: 30px auto;
+}
+    
+ /*//////////////////////////////////
+Section Breaks///////////////////
+//////////////////////////////////*/  
+    
+#cover1 {
+background-attachment: fixed; 
+}
+    
+.section-break  {
+-webkit-flex-flow: row wrap;
+flex-flow: row wrap;
+    }
+ .section-break h4 {
+  flex: 1 100%;
+     font-size: 3em;
+ }
+  
+.section-break blockquote {
+ font-size: 1.35em;
+    line-height: 1.85;
+}
+    
+.review {
+width: 50%; 
+padding: 1em 5em 4em 5em;
+    
+}
+    
+    .quote {
+width: 75px;
+height: 75px;
+margin-bottom: -2em;
+}
+
+
     
 }
