@@ -20,3 +20,23 @@ $('nav').removeClass("sticky");
 }
 });
      
+
+           
+$(window).scroll(function() {
+if ($(this).scrollTop() > 1){  
+$('ul').addClass("sticky");
+}
+else{
+$('ul').removeClass("sticky");
+}
+});
+
+$(window).scroll(function() {
+if ($(this).scrollTop() > 1){  
+$('li').addClass("sticky");
+}
+else{
+$('li').removeClass("sticky");
+}
+});
+   

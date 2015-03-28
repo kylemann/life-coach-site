@@ -37,7 +37,7 @@
 </ul>
 </li>
 <li><a href="#contact">Contact</a></li>
-    <a href="https://www.google.com/"><li id="div1">
+    <a href="https://www.google.com/"><li class="last-b">
     Free
    <br>Consultation</li></a>
 <!--
@@ -91,9 +91,11 @@ Services
 <!--    <h1>of your</h1>-->
 <!--    -->
 <!--         <p class="intro-p">growth and development</p> -->
+<!--
          <div class="mask2"></div>
  <h1 id="font">We are here to help. </h1>
-<!--   <a href="https://www.google.com/"><div class="register-button">Connect with us today and start your Journey!</div></a>-->
+-->
+<!--   <a href="https://www.google.com/"><div class="register-button">Connect with us today - We are here to help.</div></a>-->
 <!--
          <div class="mask2"></div>
         <p class="sub-title">The Experience team is here to help.</p>
@@ -105,7 +107,7 @@ Services
 <article class="services">
     <section class="section-career blue">
     <h3>Careers Counseling</h3>
-        <div class="section-image"><img src="images/classes.svg"></div>
+        <div class="section-image"><img src="images/career.svg"></div>
     <p>Jumpstart your careers</p>
     </section>
         <section class="section-career aqua">
@@ -335,11 +337,34 @@ Make your appointment TODAY!</p>
             <div class="company-logo"><img src="images/triangle.svg"></div>
     </article>
     
-    <article class="cover information section-break" id="cover1">
-    <section class="container2">
-        <p>Let the Journey Begin!</p>
-    <p>Choosing a Life Coach is one of the most important decisions you will ever make. Feeling comfortable with a coach is key. Read this page to learn a little about us. Then set up a consultation so we can learn more about you!</p>
+    <article class="information change grey">
+    <section class="container2 info-text">
+        <h4>Let the Journey Begin!</h4>
+    <p>Please fill out the form below, and tell us a bit about yourself - Our team members will follow up at their ealiest convenience. We look forward to partnering with you as you create a life of intention!</p>
+        
     </section>
+         <section class="container2">
+	    <form action="form.php" method="post" enctype="multipart/form-data">
+	        
+<!--	        <h1 class="title">Register: Consultation</h1>-->
+	        
+		    <label></label>
+		    <input name="name" required="required" placeholder="Name">
+		    
+		            
+		    <label></label>
+		    <input name="email" type="email" required="required" placeholder="Email">
+            
+             <label></label>
+		    <input name="phone" type="phone" required="required" placeholder="Phone Number">
+		            
+               <label></label>
+		    <input name="company"  required="required" placeholder="Your Company">
+		    
+		    <label>Tell us a bit about yourself</label>
+		    <textarea name="message" cols="20" rows="5" required="required" placeholder="Message"></textarea>     <input id="submit" name="submit" type="submit" value="Submit"> 
+	    </form>
+            </section> <!-- contain2 -->
     </article>
     
     <script src=""></script>
