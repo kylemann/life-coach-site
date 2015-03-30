@@ -8,15 +8,20 @@ General Styling - Body, Links, Img, Logo, Lines
 }
 
 body {
-font-family: 'Lato', sans-serif;
+
+        font-family: 'Oxygen', sans-serif;
+
 margin: 0;
 padding: 0;
     color: #41545E;
 }
 
-p {margin: 1.5em 0 0 0;} 
+p {margin: 1.5em auto 0 auto;} 
 
-.info-text p {margin: 1.5em 0 0 0;} 
+.info-text p, .info-text2 p {
+    
+margin: 1em auto 0 auto;
+} 
 
 a {
  text-decoration: none;   
@@ -212,20 +217,20 @@ margin: 3.5em auto;
 .section-career {
 margin: 0;
 text-align: center;
-padding: 5.5em 0;
+padding: 4.5em 0;
 }
 
 .section-career h3 {
  color: white;
-font-size: 2em;
+font-size: 2.25em;
     margin: 0;
-font-family: 'Lato', sans-serif;
+font-family: 'PT Sans Narrow', sans-serif;
 
 }
 
 .section-career p {
     color: white;
-    font-size: 1em;
+    font-size: 1.25em;
     margin: 0;
 }
 
@@ -234,8 +239,16 @@ font-family: 'Lato', sans-serif;
        background-color: #648191;
 }
 
+.blue-o {
+ background-color: hsla(201, 18%, 48%, .75);   
+}
+
 .aqua {
    background-color: #82A7BD;   
+}
+
+.aqua-o {
+ background-color: hsla(202, 31%, 63%, .75);   
 }
 
 .dark-blue {
@@ -244,10 +257,24 @@ font-family: 'Lato', sans-serif;
     
 }
 
+.dark-blue-o {
+ background-color: hsla(209, 23%, 66%, .75);   
+}
+
 .grey {
 background-color: #F7FAFA;    
     
 }
+
+.grey-o {
+ background-color: hsla(209, 23%, 66%, .75);   
+    
+}
+
+.black-text {
+ color: black;   
+}
+
 
 .white {
  background-color: white;   
@@ -268,6 +295,7 @@ flex-direction: column;
 -webkit-flex-direction: column;
 /*background-color: #FCFFFF;*/
 margin: 0 auto;
+/*align-items: stretch;*/
 }
 
 .information p {
@@ -283,19 +311,28 @@ font-size: 1.75em;
 text-align: center;
 font-size: 4em;
 color: #34415C;
+
 }
 
-.narrow-text, .info-text, .cabrina-bio {
+.narrow-text, .info-text, .cabrina-bio, info-text2 {
  padding: 20px 10px 40px 10px;   
 }
 
-.info-text h4 {
+.info-text h4, .info-text2 h4 {
  text-align: center;
-    
+  margin: 0 0 .75em 0;  
+font-family: 'Source Sans Pro', sans-serif;
+font-weight: normal;
+    font-size: 3em;
 }
 
 .narrow-text p, .narrow-text h4 {
 color: white; 
+}
+
+.narrow-text h4 {
+ font-family: 'Source Sans Pro', sans-serif;   
+   font-weight: normal; 
 }
 
 
@@ -308,7 +345,7 @@ border-radius: 4px;
 text-align: center;
 width: 75%;
 margin: 20px auto 0 auto;
-    font-family: 'Oswald', sans-serif;
+font-family: 'PT Sans Narrow', sans-serif;
     font-weight: 300;
 }
 
@@ -371,12 +408,12 @@ margin: 0 auto;
 margin: 1.5em auto;
 }
 
-.goal-list {
+.goal-list, .goal-list2 {
  padding: 25px 5px;
     color: white;
 }
 
-.goal-list ul {
+.goal-list ul, .goal-list2 ul {
  list-style: none;   
   text-align: center;
 list-style-type: none;
@@ -384,7 +421,7 @@ list-style-type: none;
 padding: 0;
 }
 
-.goal-list ul li {
+.goal-list ul li, .goal-list2 ul li {
  margin: 15px auto;
 list-style-position: inside;
 }
@@ -408,7 +445,7 @@ padding: 0;
     }
 
 #cover1 {
-     background: url(../images/desktop-test.jpg) no-repeat center center;
+     background: url(../images/Optimized-section2.jpeg) no-repeat center center;
 -webkit-background-size: cover; 
 -moz-background-size: cover; 
 -o-background-size: cover; 
@@ -563,6 +600,23 @@ margin: 0 auto;
     }
 
 
+  /*//////////////////////////////////
+Background Images - Mobile///////////////////
+//////////////////////////////////*/     
+    
+    
+        
+     #special3 {
+             background: url(../images/journey-compressor.jpeg) no-repeat center center;
+-webkit-background-size: cover; 
+-moz-background-size: cover; 
+-o-background-size: cover; 
+background-size: cover;   
+     
+ }
+
+
+
 
 
 /*//////////////////////// //////////////////////
@@ -582,13 +636,14 @@ display: -webkit-flex;
 display: flex;
 -webkit-flex-wrap: wrap;
 flex-wrap: wrap;
+  
 }
     
     .section-career {  
 width: 50%;
     }    
     
-.narrow-text, .info-text, .cabrina-bio {
+.narrow-text, .info-text, .cabrina-bio, .info-text2 {
  padding: 30px 50px;   
 }
     
@@ -713,8 +768,16 @@ text-shadow: 2px 2px 2px rgba(71, 71, 71, 1);
 margin: 2.5em auto;
 }
     
+
     
-    
+    .special-hold {
+background-color: hsla(223, 0%, 47%, .65);  
+  width: 100%;
+    height: 100%;
+        padding: 5em;
+}
+  
+  
   
 
    
@@ -803,6 +866,7 @@ padding: 6px 0px;
 text-align: center;
 /*font-family: 'Montserrat', sans-serif;*/
 /*       font-family: 'Source Sans Pro', sans-serif;*/
+    font-family: 'Tenor Sans', sans-serif;
 }
     
 .top-list li:first-child {
@@ -828,7 +892,7 @@ margin-right: 40px;
     line-height: 1.5;
     color: white;
     margin-right: 0;
-font-family: 'Oswald', sans-serif;
+font-family: 'PT Sans Narrow', sans-serif;
     font-weight: 300;
 -webkit-transition: all .4s ease-in-out;
 -moz-transition: all .4s ease-in-out;
@@ -899,7 +963,7 @@ margin: 15px 0;
 margin: 15px 0;
 padding: 0;
 text-align: left;
- font-family: 'Lato', sans-serif;  
+
 
 }
     
@@ -941,12 +1005,23 @@ DISCOVERY SECTION///////////////////
 .information {
 flex-direction: row;
 -webkit-flex-direction: row;
+/*
+ align-items: center;
+-webkit-align-items: center;
+*/
 }
+    
+    .align {
+      align-items: center;
+-webkit-align-items: center;   
+        
+    }
     
     .change {
 flex-direction: column;
 -webkit-flex-direction: column;
-        padding: 4em;
+padding: 0;
+
 }
     
     .change.info-text {
@@ -960,7 +1035,7 @@ padding:  2.25em 20px 20px 20px;
 }
 .narrow-text{
  width: 25%;   
-  padding: 7em 1.5em;
+  padding: 7em 1.5em; 
 }
 
 .info-text {
@@ -968,10 +1043,15 @@ padding:  2.25em 20px 20px 20px;
   padding: 7em 3em;
 }
     
-.info-text p {
+    .info-text2 {
+      width: 65%;  
+        padding: 7em 3em;  
+    }
+    
+.info-text p, .info-text2 p {
   font-size: 1.275em;
     line-height: 1.7;
-    max-width: 660px;
+    max-width: 600px;
     margin: 1.5 auto;
     
 }
@@ -1046,7 +1126,8 @@ border-bottom-right-radius: 4px;
 }
     
 .container {
-width: 85%; 
+width: 85%;
+    max-width: 700px;
 margin: 0 auto;
 background: none;
 z-index: 2;
@@ -1071,28 +1152,73 @@ Life Coaching Services SECTION///////////////////
 }
     
     .goal-list {
-        padding: 80px 5px;
-     width: 25%;   
-        
+        padding: 7em 5px;
+     width: 25%;     
+vertical-align: middle;
     }
     
-        
+.goal-list2 {
+    padding: 7em 5px;
+     width: 35%;     
+vertical-align: middle;
+    }
+
 .text-display1 {
  width: 25%; 
 padding: .9em 5px;
 }
     
-.goal-list ul li {
- margin: 2.75em auto;
+.goal-list ul li, .goal-list2 ul li  {
+ margin: 2.5em auto;
+
 }
+    
+  /*//////////////////////////////////
+Background Images - Desktop///////////////////
+//////////////////////////////////*/   
+    
+
+    
+ #special1 {
+background: url(../images/mtn-compressor.jpeg) no-repeat center center;
+  -webkit-background-size: cover; 
+-moz-background-size: cover; 
+-o-background-size: cover; 
+background-size: cover;    
+ }
+    
+    #special2 {
+background: url(../images/desktop-test.jpg) no-repeat center center;  
+  -webkit-background-size: cover; 
+-moz-background-size: cover; 
+-o-background-size: cover; 
+background-size: cover;   
+ }
+    
+.services {
+background: url(../images/desktop-test2.jpg) no-repeat center center;   
+ -webkit-background-size: cover; 
+-moz-background-size: cover; 
+-o-background-size: cover; 
+background-size: cover;   
+}
+    
+    .intro-cover, #special1,  #special2,  #special3, #cover1, .services {
+background-attachment: fixed; 
+}
+    
+    .holder {
+     width: 100%;
+        height: 100%;
+        background: hsla(202, 31%, 63%, .75);
+    }
+
     
  /*//////////////////////////////////
 Section Breaks///////////////////
 //////////////////////////////////*/  
-    
-#cover1 {
-background-attachment: fixed; 
-}
+      
+
     
 .section-break  {
 -webkit-flex-flow: row wrap;
@@ -1122,6 +1248,7 @@ margin-bottom: -2em;
     
     .container2 {
      width: 50%;
+        max-width: 1000px;
 /*padding: 2em;*/
         padding: 0;
         
