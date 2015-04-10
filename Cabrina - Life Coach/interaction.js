@@ -39,4 +39,7 @@ else{
 $('li').removeClass("sticky");
 }
 });
+
+
+
    

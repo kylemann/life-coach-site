@@ -104,6 +104,16 @@ border-radius: 1px;
 border-bottom: 2px solid white;
 }
 
+.mask3 { 
+height: 1px; 
+/*margin: 4px 0;*/
+margin: 4em auto;
+width: 60%; 
+border-radius: 1px;
+border-bottom: 3px solid white;
+}
+
+
 
 
 
@@ -245,6 +255,10 @@ font-family: 'PT Sans Narrow', sans-serif;
  background-color: hsla(201, 18%, 48%, .75);   
 }
 
+.grey-0 {
+ background-color: hsla(223, 0%, 47%, .65);    
+}
+
 .aqua {
    background-color: #82A7BD;   
 }
@@ -262,6 +276,7 @@ font-family: 'PT Sans Narrow', sans-serif;
 .dark-blue-o {
  background-color: hsla(209, 23%, 66%, .75);   
 }
+
 
 .grey {
 background-color: #F7FAFA;    
@@ -338,11 +353,10 @@ color: white;
 }
 
 
-.register-button {
+.register-button, .register-button2 {
 padding: 10px 5px; 
 font-size: 1em;
-color: white;
-border: 2px solid white;
+
 border-radius: 4px;
 text-align: center;
 width: 75%;
@@ -350,6 +364,21 @@ margin: 20px auto 0 auto;
 font-family: 'PT Sans Narrow', sans-serif;
     font-weight: 300;
 }
+
+.register-button {
+color: white;
+}
+
+.register-button2 {
+color: inherit;
+    border: 2px solid #41545E;
+}
+
+.register-button {
+
+    border: 2px solid white;
+}
+
 
 
 /*//////////////////////////////////
@@ -362,7 +391,7 @@ Meet the COACH SECTION///////////////////
 }
 .meet-coach p {
 line-height: 0;
-font-size: 1.5em;
+font-size: 2em;
 margin: 0;
 }
 
@@ -372,7 +401,7 @@ margin: 0;
 
 .meet-coach h4 { 
 line-height: 0;
-font-size: 3em; 
+font-size: 4em; 
 margin: .5em ;
 }
 
@@ -412,7 +441,7 @@ margin: 1.5em auto;
 
 .goal-list, .goal-list2 {
  padding: 25px 5px;
-    color: white;
+/*    color: white;*/
 }
 
 .goal-list ul, .goal-list2 ul {
@@ -464,7 +493,7 @@ background-size: cover;
     z-index: 1;   
 }
 
-.section-break blockquote {
+.section-break blockquote, .quote-text blockquote {
  font-size: 1.15em;
     line-height: 1.55;
     
@@ -608,14 +637,32 @@ Background Images - Mobile///////////////////
     
     
         
-     #special3 {
-             background: url(../images/journey-compressor.jpeg) no-repeat center center;
+.special3 {
+             background: url(../images/journey-compressor.jpg) no-repeat center center;
 -webkit-background-size: cover; 
 -moz-background-size: cover; 
 -o-background-size: cover; 
 background-size: cover;   
      
  }
+
+
+/*//////////////////////////////////
+TESTIMONIAL SECTIONS BREAKS///////////////////
+//////////////////////////////////*/
+
+
+.client-image {
+ height: 100px;
+    width: 100px;
+    border-radius: 100%;
+    background: black;
+    margin: 0 auto;
+}
+
+.pic-image p {
+ text-align: center;   
+}
 
 
 
@@ -773,12 +820,7 @@ margin: 2.5em auto;
     
 
     
-    .special-hold {
-background-color: hsla(223, 0%, 47%, .65);  
-  width: 100%;
-    height: 100%;
-        padding: 5em;
-}
+
   
   
   
@@ -904,7 +946,7 @@ margin-right: 47px;
 .top-list li:last-child {
 
     height: 100%;
-    padding: .4em 10px;
+    padding: .6em 10px;
     text-align: center;
     font-size: 1.15em;
     line-height: 1.5;
@@ -935,7 +977,7 @@ nav.top-list li:last-child {
     
     
 .logo-title {
-   font-size: 1.45em;  
+   font-size: 1.85em;  
 font-weight: bold;
 }
 .logo-description {
@@ -1043,9 +1085,8 @@ flex-direction: row;
     }
     
     .change {
-flex-direction: column;
--webkit-flex-direction: column;
-padding: 0;
+
+padding: 7em 5em;
 
 }
     
@@ -1060,7 +1101,17 @@ padding:  2.25em 20px 20px 20px;
 }
 .narrow-text{
  width: 25%;   
-  padding: 7em 1.5em; 
+  padding: 5em 1.5em; 
+}
+    .narrow-text h4{
+text-align: center;
+        font-size: 2.75em;
+        line-height: .5;
+}
+    
+        .narrow-text p {
+text-align: center;
+      
 }
 
 .info-text {
@@ -1069,14 +1120,17 @@ padding:  2.25em 20px 20px 20px;
 }
     
     .info-text2 {
-      width: 65%;  
+      width: 100%;  
         padding: 7em 3em;  
+        margin: 0 auto;
+/*        background-color: hsla(201, 18%, 48%, .75);*/
+/*        background: white;*/
     }
     
 .info-text p, .info-text2 p {
   font-size: 1.275em;
     line-height: 1.7;
-    max-width: 600px;
+    max-width: 650px;
     margin: 1.5 auto;
     
 }
@@ -1091,17 +1145,28 @@ transform: rotate(270deg) ;
 -ms-transform: rotate(270deg);
     }
 
-.register-button {
+.register-button, .register-button2  {
  margin-top: 50px;
     width: 75%;
+
     -webkit-transition: all .4s ease-in-out;
 -moz-transition: all .4s ease-in-out;
 -o-transition: all .4s ease-in-out;
 transition: all .4s ease-in-out;
     
 }
-.register-button:hover {
+    
+.register-button  {
+    width: 75%;
+    }
+    
+    .register-button2  {
+    width: 35%;
+    }
+        
+.register-button:hover, .register-button2:hover {
  background-color: #93B8CF;
+    color: white;
 }
     
 /*//////////////////////////////////
@@ -1184,7 +1249,7 @@ vertical-align: middle;
     
 .goal-list2 {
     padding: 7em 5px;
-     width: 35%;     
+     width: 30%;     
 vertical-align: middle;
     }
 
@@ -1194,8 +1259,12 @@ padding: .9em 5px;
 }
     
 .goal-list ul li, .goal-list2 ul li  {
- margin: 2.5em auto;
+ margin: 1.75em auto;
 
+}
+    
+.sixty {
+ width: 70%;   
 }
     
   /*//////////////////////////////////
@@ -1205,7 +1274,7 @@ Background Images - Desktop///////////////////
 
     
  #special1 {
-background: url(../images/mtn-compressor.jpeg) no-repeat center center;
+background: url(../images/mtn-compressor1.jpg) no-repeat center center;
   -webkit-background-size: cover; 
 -moz-background-size: cover; 
 -o-background-size: cover; 
@@ -1213,7 +1282,7 @@ background-size: cover;
  }
     
     #special2 {
-background: url(../images/desktop-test.jpg) no-repeat center center;  
+background: url(../images/desktop-test1.jpg) no-repeat center center;  
   -webkit-background-size: cover; 
 -moz-background-size: cover; 
 -o-background-size: cover; 
@@ -1228,7 +1297,7 @@ background: url(../images/desktop-test2.jpg) no-repeat center center;
 background-size: cover;   
 }
     
-    .intro-cover, #special1,  #special2,  #special3, #cover1, .services {
+.intro-cover, #special1,  #special2, #cover1, .services {
 background-attachment: fixed; 
 }
     
@@ -1254,10 +1323,13 @@ flex-flow: row wrap;
      font-size: 3em;
  }
   
-.section-break blockquote {
+.section-break blockquote, .quote-text blockquote {
  font-size: 1.35em;
     line-height: 1.85;
 }
+    .section-break blockquote {
+     text-align: center;   
+    }
     
 .review {
 width: 50%; 
@@ -1273,35 +1345,97 @@ margin-bottom: -2em;
     
     .container2 {
      width: 50%;
-        max-width: 1000px;
-/*padding: 2em;*/
-        padding: 0;
-        
-        margin: 0 auto;
+padding: 0;
         font-size: 1em;
     }
+    
+    .contact-info {
+     width: 50%;
+/*margin-left: auto;*/
+
+        padding: 1em;
+    }
+    
+    .contact-info h4 {
+     margin: 0 0 -.25em 0;
+        font-size: 3em;
+        text-align: center;
+    }
+    
+        .contact-info h5 {
+     margin: 1em 0 -.65em 0;
+        font-size: 2em;
+            text-align: center;
+    }
+    
+        .contact-info p {
+        font-size: 1.5em;
+            line-height: 1.45;
+            max-width: 550px;
+            text-align: center;
+    }
+    
+     .contact-info p.left {
+       font-size: 1.15em;
+            line-height: 1.35;  
+   max-width: 400px;
+    }
+    
+
+    form 
+{
+    margin: 0 0 0 0;
+    margin-right: auto;
+    width: 75%;
+    max-width: 600px;
+}
+
     
  /*//////////////////////////////////
 Company Review Section///////////////////
 //////////////////////////////////*/  
     
     .company {
-     width: 50%;   
+     width: 100%;   
         
     }
     
     .meet-company {
-margin-right: auto;
-width: 50%;
-background-color: #82A7BD;
-padding: 20px 5px;
+margin: 0 auto;
+width: 100%;
+/*background-color: #82A7BD;*/
+padding: 10px 5px;
 color: white;
 border-bottom-left-radius: 4px;
 border-bottom-right-radius: 4px;
 text-align: center;
-        font-size: 1.45em;
+        font-size: 3.45em;
+
     }
-
-
     
+/*//////////////////////////////////
+TESTIMONIAL SECTIONS BREAKS///////////////////
+//////////////////////////////////*/
+
+.width {
+
+    padding: 7em 2em;
+}
+    
+    
+.pic-image {
+ width: 15%; 
+    margin-left: auto;
+}
+    
+.quote-text {
+ width: 50%; 
+    max-width: 700px; 
+    margin-right: auto;
+    z-index: 1;
+}
+    
+    .client-image {
+ height: 200px;
+    width: 200px;
 }
