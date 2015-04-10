@@ -119,6 +119,8 @@ border-bottom: 3px solid white;
 
 
 
+
+
 /*////////////////////////////////////////////// 
 Navigation MENU
 ///////////////////////////////////////////////*/
@@ -496,7 +498,7 @@ background-size: cover;
 .section-break blockquote, .quote-text blockquote {
  font-size: 1.15em;
     line-height: 1.55;
-    
+    font-weight: 300;
 }
 
 
@@ -549,6 +551,7 @@ Form Styling///////////////////
 /* Labels are titles for the text fields. You can use a placeholder instead if you like*/
 label 
 {
+    font-size: 1.25em;
     display:block;
     margin-top:20px;
     letter-spacing:2px;
@@ -572,7 +575,7 @@ input, textarea, file {
 border: none;
 	padding:5px;
 	margin-top:3px;
-	font-size:0.9em;
+	font-size: .8em;
 	color:#3a3a3a;
 }
 
@@ -656,10 +659,29 @@ TESTIMONIAL SECTIONS BREAKS///////////////////
  height: 100px;
     width: 100px;
     border-radius: 100%;
-    background: black;
+
     margin: 0 auto;
 }
 
+#client {
+
+background: url(../images/review-pic.jpg) no-repeat center center;
+-webkit-background-size: cover; 
+-moz-background-size: cover; 
+-o-background-size: cover; 
+background-size: cover;
+
+}
+
+#client2 {
+
+background: url(../images/review-pic2.jpg) no-repeat center center;
+-webkit-background-size: cover; 
+-moz-background-size: cover; 
+-o-background-size: cover; 
+background-size: cover;
+
+}
 .pic-image p {
  text-align: center;   
 }
@@ -1127,11 +1149,19 @@ text-align: center;
 /*        background: white;*/
     }
     
-.info-text p, .info-text2 p {
+.info-text p {
   font-size: 1.275em;
     line-height: 1.7;
     max-width: 650px;
-    margin: 1.5 auto;
+    margin: 1em auto;
+    
+}
+    
+.info-text2 p {
+  font-size: 1.45em;
+    line-height: 1.95;
+    max-width: 950px;
+    margin: 1.5em auto;
     
 }
     
@@ -1289,6 +1319,17 @@ background: url(../images/desktop-test1.jpg) no-repeat center center;
 background-size: cover;   
  }
     
+/*
+        #special4 {
+background: url(../images/photo3.jpg) no-repeat center center;  
+  -webkit-background-size: cover; 
+-moz-background-size: cover; 
+-o-background-size: cover; 
+background-size: cover;   
+ }
+*/
+   
+    
 .services {
 background: url(../images/desktop-test2.jpg) no-repeat center center;   
  -webkit-background-size: cover; 
@@ -1324,7 +1365,7 @@ flex-flow: row wrap;
  }
   
 .section-break blockquote, .quote-text blockquote {
- font-size: 1.35em;
+ font-size: 1.5em;
     line-height: 1.85;
 }
     .section-break blockquote {
@@ -1429,13 +1470,17 @@ TESTIMONIAL SECTIONS BREAKS///////////////////
 }
     
 .quote-text {
- width: 50%; 
-    max-width: 700px; 
+ width: 70%; 
+    max-width: 800px; 
     margin-right: auto;
     z-index: 1;
 }
     
     .client-image {
- height: 200px;
-    width: 200px;
+ height: 150px;
+    width: 150px;
+}
+    
+
+    
 }
