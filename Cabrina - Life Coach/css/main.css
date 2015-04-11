@@ -174,11 +174,24 @@ font-size: 1em;
 HEADER
 ///////////////////////////////////////////////*/
 
+/*
 .intro-cover {
 margin: 0;
 width: 100%;
 height: 70vh;
 background: url(../images/desktop-test2.jpg) no-repeat center center;
+-webkit-background-size: cover; 
+-moz-background-size: cover; 
+-o-background-size: cover; 
+background-size: cover; 
+}
+*/
+
+.intro-cover {
+margin: 0;
+width: 100%;
+height: 70vh;
+background: url(../images/journey-compressor.jpeg) no-repeat center center;
 -webkit-background-size: cover; 
 -moz-background-size: cover; 
 -o-background-size: cover; 
@@ -1448,16 +1461,24 @@ Section Breaks///////////////////
 .section-break  {
 -webkit-flex-flow: row wrap;
 flex-flow: row wrap;
+    padding: 5em 0;
     }
  .section-break h4 {
   flex: 1 100%;
      font-size: 3em;
  }
   
-.section-break blockquote, .quote-text blockquote {
- font-size: 1.35em;
-    line-height: 1.75;
+.quote-text blockquote {
+ font-size: 1.45em;
+    line-height: 1.8;
 }
+    
+    .section-break blockquote {
+ font-size: 1.5em;
+    line-height: 1.9;
+}
+    
+    
     .section-break blockquote {
      text-align: center;   
     }
@@ -1539,10 +1560,20 @@ TESTIMONIAL SECTIONS BREAKS///////////////////
     width: 125px;
 }
     
+/*//////////////////////////////////
+Contact SECTION ///////////////////
+//////////////////////////////////*/  
     
     .section-break-final {
- font-size: 2em;
+ font-size: 2.25em;
 padding: 1em 0;
+    }
+    
+    
+       .section-break-final p
+    {
+     margin: 3.5em 0;
+        
     }
 
  /*//////////////////////////////////
