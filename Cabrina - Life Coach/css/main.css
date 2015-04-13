@@ -846,6 +846,7 @@ flex-wrap: wrap;
     
     .section-career {  
 width: 50%;
+ 
     }    
     
 .narrow-text, .info-text, .cabrina-bio, .info-text2 {
@@ -1000,7 +1001,15 @@ width: 25%;
 -moz-transition: all .4s ease-in-out;
 -o-transition: all .4s ease-in-out;
 transition: all .4s ease-in-out;
+    padding: 7em 0;
     }
+    
+    
+.section-image {
+margin: 3.5em auto;
+    
+}
+
     
 /*
 .hover-o:hover {
@@ -1306,7 +1315,7 @@ text-align: center;
     
     .info-text2 {
       width: 100%;  
-        padding: 7em 3em;  
+        padding: 7em 3em 9em 3em;  
         margin: 0 auto;
 /*        background-color: hsla(201, 18%, 48%, .75);*/
 /*        background: white;*/
@@ -1470,10 +1479,11 @@ Background Images - Desktop///////////////////
 //////////////////////////////////*/   
     
 
+/*
     
- 
-    
- #special1,  #special2, #cover1 {
+  #special1,  #special2,
+*/
+#cover1,  #special1,  #special2 {
 background-attachment: fixed; 
 }
     
