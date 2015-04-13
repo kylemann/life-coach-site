@@ -54,7 +54,7 @@ display: -webkit-flex;
 display: flex;
 align-items: center;
 -webkit-align-items: center;   
-background-color: #648191; 
+  background-color: hsla(202, 31%, 63%, .95); 
 padding: 5px;
 justify-content: center;
 -webkit-justify-content: center;
@@ -148,7 +148,7 @@ position: fixed;
 width: 100%;
 align-items: center;
 -webkit-align-items: center;   
-background-color: #648191; 
+  background-color: hsla(202, 31%, 63%, .95);
 padding: 10px;
 justify-content: center;
 /*    margin: 0;*/
@@ -261,7 +261,7 @@ padding: 2.5em 0;
 font-size: 2.25em;
     margin: 0;
 font-family: 'PT Sans Narrow', sans-serif;
-
+font-weight: 300;
 }
 
 .section-career p {
@@ -437,7 +437,7 @@ width: 200px;
 }
 .cabrina-mobile img {
    border-radius: 100%; 
-    
+ 
 }
 
 .triangle {
@@ -591,12 +591,13 @@ form
 input, textarea, file {
 	width:99%;
 	height:27px;
-	background-color:#efefef;
+/*	background-color:#efefef;*/
 	border-radius: 2px;
 	-moz-border-radius:2px;
 	-webkit-border-radius:2px;
-border: none;
-	padding:5px;
+    
+border: 1px solid #41545E;
+	padding:8px;
 	margin-top:3px;
 	font-size: .8em;
 	color:#3a3a3a;
@@ -612,7 +613,8 @@ input:focus, textarea:focus {
 textarea 
 {
 	height:213px;
-	background-color: #efefef;
+/*	background-color: #efefef;*/
+    border: 1px solid #41545E;
 }
 
 
@@ -720,6 +722,16 @@ background: url(../images/review-pic2.jpg) no-repeat center center;
 background-size: cover;
 
 }
+
+#client3 {
+
+background: url(../images/brian-photo.jpg) no-repeat center center;
+-webkit-background-size: cover; 
+-moz-background-size: cover; 
+-o-background-size: cover; 
+background-size: cover;
+
+}
 .pic-image p {
  text-align: center;   
 }
@@ -762,7 +774,7 @@ letter-spacing: 0;
     }
 
 #special4 {
-background: url(../images/journey-compressor.jpg) no-repeat center center;  
+background: url(../images/final-image.jpg) no-repeat center center;  
   -webkit-background-size: cover; 
 -moz-background-size: cover; 
 -o-background-size: cover; 
@@ -1028,25 +1040,35 @@ transition: all .4s ease-in-out;
     
     nav.top-nav.sticky {
        
--webkit-box-shadow: 0px 3px 11px 0px rgba(76, 76, 76, 0.75);
--moz-box-shadow:    0px 3px 11px 0px rgba(76, 76, 76, 0.75);
-box-shadow:         0px 3px 11px 0px rgba(76, 76, 76, 0.75);
+-webkit-box-shadow: 0px 2px 7px 0px rgba(76, 76, 76, 0.75);
+-moz-box-shadow:    0px 2px 7px 0px rgba(76, 76, 76, 0.75);
+box-shadow:         0px 2px 7px 0px rgba(76, 76, 76, 0.75);
  
-background-color: hsla(201, 18%, 48%, .8);
+/*background-color: hsla(201, 18%, 48%, .8);*/
+/* background-color: hsla(209, 23%, 66%, .75);*/
+/*background-color: hsla(0, 0%, 100%, .75);   */
+        
+        background-color: hsla(202, 31%, 63%, .95);
+/*        background-color: hsla(202, 18%, 20%, .5);*/
     }
     
      ul.drop-nav.sticky {
-background-color: hsla(201, 18%, 48%, .2);
+  background-color: hsla(202, 31%, 63%, .25);
          	-webkit-box-shadow: 0 8px 6px -6px rgba(76, 76, 76, 0.75);
 	   -moz-box-shadow: 0 8px 6px -6px rgba(76, 76, 76, 0.75);
-	        box-shadow: 0 8px 6px -6px rgba(76, 76, 76, 0.75);
+	        box-shadow: 0 8px 6px -6px rgba(76, 76, 76, 0.5);
          
      }
     
         li.last-b.sticky {
-      background-color: #82A7BD;   
-         
+/*      background-color: #82A7BD;   */
+
      }
+    
+    .top-list li.sticky, .top-list li.sticky:nth-child(2), .logo-description.sticky {
+/*  color: #41545E;   */
+        
+    }
 
     
 
@@ -1098,18 +1120,20 @@ margin-right: 47px;
 .top-list li:last-child {
 
     height: 100%;
-    padding: 1.3em 10px;
+    padding: .3em 10px;
     text-align: center;
     font-size: 1.15em;
     line-height: 1.5;
     color: white;
-    margin-right: 0;
+    margin-right: 15px;
 font-family: 'PT Sans Narrow', sans-serif;
     font-weight: 300;
 -webkit-transition: all .4s ease-in-out;
 -moz-transition: all .4s ease-in-out;
 -o-transition: all .4s ease-in-out;
 transition: all .4s ease-in-out;
+    border: 1px solid white;
+    border-radius: 3px;
 }
     
     
@@ -1199,7 +1223,7 @@ margin-right: 0;
 margin-bottom: 5px;
 font-family: 'Roboto', sans-serif; 
     font-weight: inherit;
-
+border: none;
 }
     
       .drop-nav li:last-child:hover {
@@ -1237,10 +1261,15 @@ flex-direction: row;
         
     }
     
+    .align-self {
+     align-self: center;
+    -webkit-align-self: center;      
+    }
+    
     .change {
 flex-direction: column;
 -webkit-flex-direction: column;
-padding: 7em 5em;
+padding: 8em 5em;
 
 }
     
@@ -1366,6 +1395,9 @@ background: url(../images/cabrina-image.jpg) no-repeat center center;
 -o-background-size: cover; 
 background-size: cover;
 border-radius: 100%;
+-webkit-box-shadow: 0px 0px 7px 1px rgba(115,115,117,.75);
+-moz-box-shadow: 0px 0px 7px 1px rgba(115,115,117,.75);
+box-shadow: 0px 0px 7px 1px rgba(115,115,117,.75);
   }
     
 .meet-coach {
@@ -1441,7 +1473,7 @@ Background Images - Desktop///////////////////
     
  
     
- #special1,  #special2, #cover1,#special4 {
+ #special1,  #special2, #cover1 {
 background-attachment: fixed; 
 }
     
@@ -1503,11 +1535,13 @@ margin-bottom: -2em;
 }
     
 .justify {
- justify-content: center;   
+ justify-content: center;
+    -webkit-justify-content: center;
 }
     
     .contact-block {
-     margin: 0 2.75em 3em 2.75em;   
+     margin: 0 2.75em 3em 2.75em;
+     
     }
 
     
@@ -1558,6 +1592,18 @@ TESTIMONIAL SECTIONS BREAKS///////////////////
     .client-image {
  height: 125px;
     width: 125px;
+/*
+-webkit-box-shadow: 0px 0px 16px 1px rgba(115,115,117,1);
+-moz-box-shadow: 0px 0px 16px 1px rgba(115,115,117,1);
+box-shadow: 0px 0px 16px 1px rgba(115,115,117,1);
+*/
+}
+    
+.contain-picture {
+ padding: .25em .1em;
+    border: 1px solid grey;
+    border-radius: 4px;
+/*    background: white;*/
 }
     
 /*//////////////////////////////////
@@ -1572,7 +1618,7 @@ padding: 1em 0;
     
        .section-break-final p
     {
-     margin: 3.5em 0;
+     margin: 3.25em 0;
         
     }
 
