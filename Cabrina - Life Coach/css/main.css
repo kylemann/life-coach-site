@@ -1,76 +1,40 @@
 
  /*//////////////////////////////////
 FONT_FAMILY///////////////////
-//////////////////////////////////*/  
- 
-body {
+//////////////////////////////////*/ 
 
+.section-career h3, .top-list li:last-child, .register-button, .register-button2 {
+
+font-family: 'Open Sans Condensed', sans-serif;
+
+}
+ 
+body, .top-list li:nth-child(2), .drop-nav li:first-child, .drop-nav li:last-child {
+
+font-family: 'Open Sans', sans-serif;
+
+}
+
+.info-text h4, .info-text2 h4,  .contact-info h4, .contact-info h5, .meet-coach h4
+{
 font-family: 'Source Sans Pro', sans-serif;
-
 }
 
-.intro-container p.intro-p {
-
-font-family: 'Lato', sans-serif;
-}
-
-.intro-container h1 {
-
-font-family: 'Lato', sans-serif;
-}
-
-
-.info-text h4, .info-text2 h4 {
- 
-font-family: 'Lato', sans-serif;
-
+.intro-container p.intro-p, .section-break-final p, .intro-container h1  {
+ font-family: 'Source Sans Pro', sans-serif;
 }
 
 
 
-.register-button, .register-button2 {
-
-font-family: 'Oswald', sans-serif;
-
-}
-
-    .section-break-final p
-    {
-    
-font-family: 'Lato', sans-serif;
-       
-    }
     
     p.special-goodbye {
-font-family: 'Pacifico', cursive;
-
+font-family: 'Source Code Pro', ;
     }
 
-.section-career h3 {
 
-font-family: 'Oswald', sans-serif;
-
-}
-
-
-.top-list li:nth-child(2) {
-
-font-family: 'Source Sans Pro', sans-serif;
-}
-
-.top-list li:last-child {
-
-font-family: 'Oswald', sans-serif;
-
-}
-
-.drop-nav li:first-child, .drop-nav li:last-child {
-font-family: 'Source Sans Pro', sans-serif;
-
-}
 
 .section-break blockquote, .quote-text blockquote {
-  font-family: 'Volkhov', serif; 
+font-family: 'Lato', sans-serif;
     font-style: italic;
 }
 
@@ -202,7 +166,13 @@ border-bottom: 1px solid grey;
 }
 
 
-
+.icon {
+ height: 30px;
+    width: 30px;
+/*vertical-align:middle;*/
+/*    line-height: 1.5;*/
+    margin-right: 3px;
+}
 
 
 
@@ -252,44 +222,55 @@ font-size: 1em;
 HEADER
 ///////////////////////////////////////////////*/
 
-/*
-.intro-cover {
-margin: 0;
-width: 100%;
-height: 70vh;
-background: url(../images/desktop-test2.jpg) no-repeat center center;
--webkit-background-size: cover; 
--moz-background-size: cover; 
--o-background-size: cover; 
-background-size: cover; 
-}
-*/
 
 .intro-cover {
 margin: 0;
 width: 100%;
 height: 70vh;
-background: url(../images/journey-compressor.jpeg) no-repeat center center;
+background: url(../images/journey-compressor.jpg) no-repeat center center;
 -webkit-background-size: cover; 
 -moz-background-size: cover; 
 -o-background-size: cover; 
-background-size: cover; 
+background-size: cover;
+
 }
 
 .intro-container {
-    padding-top: 6.5em;
+position: absolute;
+margin: auto;
+top: 0; left: 0; bottom: 0; right: 0;
+width: 100%;
+height: 250px;
+/*border: 1px solid red; */
+    padding-top: 1.5em;
 }
+
+    
+#font1 {
+margin: 0 auto;
+color: white;
+text-align: center; 
+max-width: 250px;
+font-size: 1.5em;
+letter-spacing: .1em;
+font-weight: normal;
+line-height: 1.25;
+align-self: center;
+    }
+
+
+
 .intro-container p.intro-p {
- font-size: .75em;
+ font-size: 1em;
 text-align: center;
 color: white;
 margin: .2em auto;
-     text-shadow: -3px 4px 6px black;
-
+    font-weight: 300;
 }
 
+/*
 .intro-container h1 {
- font-size: 1.5em;
+ font-size: 2.5em;
     text-align: center;
     color: white;
 margin: .2em auto;
@@ -297,6 +278,7 @@ margin: .2em auto;
     font-weight: 300;
 
 }
+*/
 
 
     .head-down-arrow {
@@ -351,6 +333,10 @@ flex-direction: column;
 margin: 0 auto;
 /*align-items: stretch;*/
     padding: 3em .5em;
+}
+
+.reverse-p {
+    padding: 0 .5em .5em .5em;
 }
 
 .information p {
@@ -432,6 +418,7 @@ margin: 0;
 .meet-coach h4 { 
 line-height: 0;
 font-size: 4em; 
+    font-weight: normal;
 margin: .5em 0 1.25em 0; ;
 }
 
@@ -509,7 +496,7 @@ background-size: cover;
 .section-break blockquote, .quote-text blockquote {
  font-size: 1.15em;
     line-height: 1.55;
-    font-weight: 300;
+/*    font-weight: 300;*/
 }
 
 
@@ -531,9 +518,9 @@ cite {
     line-height: 1.5;
     
 }
- /*//////////////////////////////////
+ //////////////////////////////////
 Company Review///////////////////
-//////////////////////////////////*/  
+//////////////////////////////////  
     
 
 .company-logo {
@@ -560,11 +547,12 @@ Form Styling///////////////////
 
 
 /* Labels are titles for the text fields. You can use a placeholder instead if you like*/
+
 label 
 {
-    font-size: 1.25em;
+    font-size: 1.55em;
     display:block;
-    margin-top:20px;
+    margin-top: .75em;
     letter-spacing:2px;
 }
 
@@ -578,7 +566,7 @@ form
 /* Styles the text boxes */
 input, textarea, file {
 	width:99%;
-	height:27px;
+	height:33px;
 /*	background-color:#efefef;*/
 	border-radius: 2px;
 	-moz-border-radius:2px;
@@ -802,9 +790,9 @@ Contact Form - Mobile///////////////////
     }
     
      .contact-info p.left {
-       font-size: 1.15em;
+       font-size: 1em;
             line-height: 1.35;  
-   max-width: 475px;
+   max-width: 375px;
     }
 
 
@@ -837,9 +825,12 @@ flex-direction: row;
     
     .services {
      width: 90%;
-  max-width: 800px;
-      margin: -3em auto 7em auto;
-
+  max-width: 700px;
+      margin: -5em auto 6em auto;
+/*
+border: 1px solid #41545E;
+        border-radius: 5px;
+*/
     }
 .section-career {  
 margin: 0;
@@ -885,23 +876,27 @@ margin: 1.5em auto;
  padding: 2em;   
 }
     
-    .intro-container p.intro-p {
- font-size: 1.2em;
-}
 
-.intro-container h1 {
- font-size: 2.5em;
-    text-align: center;
-}
-     .intro-container  {
-  
-padding-top: 10em;
-     }
-    
         .section-break-final {
  font-size: 1.15em;
 padding: 1em 1em;
     }
+    
+    .intro-container {
+height: 400px;
+padding-top: .5em;
+}
+   
+#font1 { 
+max-width: 500px;
+font-size: 3em;
+line-height: 1.15;
+    }
+
+
+.intro-container p.intro-p {
+ font-size: 1.25em;
+}
 
     
 }
@@ -935,59 +930,21 @@ height: 100vh;
 DESKTOP - NAVIGATION, HEADER, and SERVICES SECTION
 ///////////////////////////////////////////////*/
  
-  .intro-container  {
-  
-padding-top: 12.5em;
-
-/*      padding-left: 11em;*/
-      width: 100%;
-/*      border: 1px solid red;*/
-  }
-    
-  
-    .intro-container p.intro-p {
-font-size: 1.45rem;
-
-        font-weight: 300;
-/*        font-weight: bold;*/
-        letter-spacing: .08em;
-/*        margin: .3em 0;*/
-        margin: .5em auto;
-text-shadow: 2px 2px 2px rgba(71, 71, 71, 1);
-letter-spacing: .2em;
-        text-align: center;
-/*width: 50%;*/
+     .intro-container {
+height: 30em;
+padding: 6em 0 0 0;
 }
+   
+#font1 { 
+max-width: 800px;
+font-size: 5em;
+line-height: 1.25;
 
-.intro-container h1 {
+    }
 
-font-size: 3.5em;
-width: 100%;
-
-/* font-weight: bold;*/
-    text-align: center;
-/* width: 30%;*/
-text-shadow: 2px 2px 2px rgba(71, 71, 71, 1);
-    margin: 0 auto;
-
+.intro-container p.intro-p {
+ font-size: 1.85em;
 }
-    
-    #font1 {
-        margin: 0 auto;
-       text-align: center; 
-        width: 70%;
-        font-size: 3em;
-         letter-spacing: .1em;
-    }
-        
-    #font2 {
-        margin: 0 auto;
-       text-align: center; 
-        width: 100%;
-        font-size: 8.5em;
-        letter-spacing: .3em;
-        font-weight: 300;
-    }
     
 #font {
 
@@ -1002,21 +959,7 @@ text-shadow: 2px 2px 2px rgba(71, 71, 71, 1);
 margin: 2.5em auto;
 }
     
-
-    
-
   
-  
-  
-
-   
-    
-    
-    
-    
-
-    
-    
 /*NAVIGATION*/
 
 nav.top-nav {
@@ -1143,7 +1086,7 @@ width: 100%;
     
 .mask2 { 
 border-bottom: 5px solid white;
-margin: 2em auto 3em auto;
+margin: 3em auto;
 width: 15%; 
 
 }
@@ -1227,6 +1170,12 @@ flex-direction: row;
     padding: 0;
 }
     
+        .services {
+     width: 90%;
+  max-width: 700px;
+      margin: -8em auto 9em auto;
+        }
+    
     .align {
       align-items: center;
 -webkit-align-items: center;   
@@ -1241,7 +1190,7 @@ flex-direction: row;
     .change {
 flex-direction: column;
 -webkit-flex-direction: column;
-        padding: 9em 0;
+        padding: 8em 0;
 }
     
 /*
@@ -1254,48 +1203,61 @@ font-size: 1em;
 .text-display {
  width: 25%; 
 padding:  2.25em 20px 20px 20px;
-/*     padding: 7em 1em;*/
+     padding: 7em 1em;
 }
 
 .info-text {
 width: 100%;
 /*max-width: 900px;*/
-padding: 0 1em;
+padding: 0;
 margin: 0 auto;
 }
     
 .info-text2 {
 width: 100%;  
-padding: 9em 3em;  
+padding: 8em 3em 9.5em 3em;  
 margin: 0 auto;
 }
     
 .info-text p, .info-text2 p {
-font-size: 1.5em;
+font-size: 1.4em;
 line-height: 2;
-max-width: 750px;
+width: 80%;
+max-width: 800px;
 margin: 1.5em auto;
 font-weight: 300;
+
 }
+    
+    .info-text h4, .info-text2 h4 {
+     font-size: 4em; 
+        font-weight: normal;
+    }
   
 
 .register-button, .register-button2  {
  margin-top: 50px;
-    width: 75%;
+
 
     -webkit-transition: all .4s ease-in-out;
 -moz-transition: all .4s ease-in-out;
 -o-transition: all .4s ease-in-out;
 transition: all .4s ease-in-out;
-    
+  font-size: 1.15em;  
 }
     
+/*
 .register-button  {
-    width: 75%;
+    width: 100%;
+    max-width: 800px;
+    padding: .5em;
     }
+*/
     
     .register-button2  {
-    width: 35%;
+    width: 40%;
+          max-width: 18em;
+        padding: .5em 0;
     }
         
 .register-button:hover, .register-button2:hover {
@@ -1313,8 +1275,9 @@ display: none;
  
 .cabrina-bio {
 width: 50%;  
-padding: 7em 0;
+padding: 9em 0;
 z-index: 1;
+  
 }
     
 .first::first-line {
@@ -1410,7 +1373,7 @@ flex-flow: row wrap;
  }
   
 .quote-text blockquote, .section-break blockquote {
- font-size: 1.1em;
+ font-size: 1.25em;
     line-height: 1.8;
 }
      
@@ -1445,7 +1408,7 @@ margin-bottom: -2em;
     
     .contact-block {
      margin: 0 2.75em 3em 2.75em;
-     
+     width: 20%;
     }
 
     
@@ -1477,7 +1440,7 @@ TESTIMONIAL SECTIONS BREAKS///////////////////
 
 .width {
 
-    padding: 9em 2em;
+    padding: 10em 2em;
 }
     
     
@@ -1530,17 +1493,33 @@ padding: 1em 0;
 Contact SECTION ///////////////////
 //////////////////////////////////*/    
        .contact-info h4 {
-        font-size: 5em;
+        font-size: 4em;
+           font-weight: normal;
        }
     
-      .contact-info h5 {
-
-        font-size: 2.15em;
+      .contact-block h5 {
+   font-weight: normal;
+        font-size: 2.5em;
 
     }
     
-        .contact-info p {
-        font-size: 2.15em;
+        .contact-block p {
+        font-size: 2em;
+            font-weight: 300;
         }
     
+       .contact-info p.left {
+       font-size: 1.15em;
+            line-height: 1.35;  
+   max-width: 525px;
+       }
+    .icon {
+ height: 60px;
+    width: 60px;
+/*vertical-align:middle;*/
+/*    line-height: 1.5;*/
+    margin-right: 4px;
+        margin-top: 4px;
+}
+
 }
