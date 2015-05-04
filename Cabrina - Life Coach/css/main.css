@@ -17,24 +17,26 @@ font-family: 'Open Sans', sans-serif;
 
 .info-text h4, .info-text2 h4,  .contact-info h4, .contact-info h5, .meet-coach h4
 {
-font-family: 'Source Sans Pro', sans-serif;
+font-family: 'Ideal Sans SSm A', 'Ideal Sans SSm B';
 }
 
 .intro-container p.intro-p, .section-break-final p, .intro-container h1  {
- font-family: 'Source Sans Pro', sans-serif;
+font-family: 'Ideal Sans SSm A', 'Ideal Sans SSm B';
 }
 
 
 
     
     p.special-goodbye {
-font-family: 'Source Code Pro', ;
+font-family: 'Ideal Sans SSm A', 'Ideal Sans SSm B';
+        font-style: italic;
     }
 
 
 
 .section-break blockquote, .quote-text blockquote {
-font-family: 'Lato', sans-serif;
+/*font-family: 'Lato', sans-serif;*/
+    font-family: 'Ideal Sans SSm A', 'Ideal Sans SSm B';
     font-style: italic;
 }
 
@@ -252,7 +254,7 @@ color: white;
 text-align: center; 
 max-width: 250px;
 font-size: 1.5em;
-letter-spacing: .1em;
+/*letter-spacing: .05em;*/
 font-weight: normal;
 line-height: 1.25;
 align-self: center;
@@ -265,7 +267,7 @@ align-self: center;
 text-align: center;
 color: white;
 margin: .2em auto;
-    font-weight: 300;
+    font-weight: 200;
 }
 
 /*
@@ -494,9 +496,10 @@ background-size: cover;
 }
 
 .section-break blockquote, .quote-text blockquote {
- font-size: 1.15em;
-    line-height: 1.55;
-/*    font-weight: 300;*/
+ font-size: 1.1em;
+    line-height: 1.6;
+    font-weight: 300;
+    font-style: italic;
 }
 
 
@@ -740,7 +743,7 @@ padding: 1em .5em;
      margin: 2em 0;
 
         font-weight: 100;
-        letter-spacing: .2em;
+        letter-spacing: .05em;
     }
     
     p.special-goodbye {
@@ -937,22 +940,25 @@ padding: 6em 0 0 0;
    
 #font1 { 
 max-width: 100%;
-font-size: 6em;
+font-size: 5em;
 line-height: 1.2;
 /*text-shadow: -2px 2px 6px #696A80;*/
 /*    text-shadow: -2px 2px 13px #696A80;*/
-text-shadow: -1px 1px 2px #636669;
+/*text-shadow: -1px 1px 2px #636669;*/
     }
 
 .intro-container p.intro-p {
  font-size: 1.85em;
+    font-weight: 200;
 }
     
+/*
 #font {
 
     letter-spacing: .1em;
 
 }
+*/
     
 
     .head-down-arrow {
@@ -1232,8 +1238,9 @@ font-weight: 300;
 }
     
     .info-text h4, .info-text2 h4 {
-     font-size: 4em; 
+     font-size: 3.5em; 
         font-weight: normal;
+        font-weight: 300;
     }
   
 
@@ -1281,6 +1288,10 @@ padding: 9em 0;
 z-index: 1;
   
 }
+  .cabrina-bio h4 {  
+    font-size: 3.5em;
+      
+  }
     
 .first::first-line {
 font-weight: bold;
@@ -1375,8 +1386,8 @@ flex-flow: row wrap;
  }
   
 .quote-text blockquote, .section-break blockquote {
- font-size: 1.25em;
-    line-height: 1.8;
+ font-size: 1.2em;
+    line-height: 1.6;
 }
      
     
@@ -1442,7 +1453,7 @@ TESTIMONIAL SECTIONS BREAKS///////////////////
 
 .width {
 
-    padding: 10em 2em;
+    padding: 12em 2em;
 }
     
     
@@ -1453,7 +1464,7 @@ TESTIMONIAL SECTIONS BREAKS///////////////////
     
 .quote-text {
  width: 70%; 
-    max-width: 700px; 
+    max-width: 650px; 
     margin-right: auto;
     z-index: 1;
 }
@@ -1480,23 +1491,34 @@ Contact SECTION ///////////////////
 //////////////////////////////////*/  
     
     .section-break-final {
- font-size: 2.25em;
-padding: 1em 0;
+ font-size: 4em;
+  line-height: .5;
+padding: 10rem 0 12rem 0;
+         font-weight: 600;
+        font-style: normal;
     }
     
     
        .section-break-final p
     {
-     margin: 3.75em 0;
-        
+     margin: .75em 0;
+         font-weight: 400;
+    
+    text-shadow: 0px 2px 2px rgba(140, 140, 140, 0.75);
     }
+    
+       .section-break-final p.special-goodbye {
+font-size: 2rem;
+              font-weight: 300;
+    }
+
 
  /*//////////////////////////////////
 Contact SECTION ///////////////////
 //////////////////////////////////*/    
        .contact-info h4 {
-        font-size: 4em;
-           font-weight: normal;
+        font-size: 3.5em;
+           font-weight: 300;
        }
     
       .contact-block h5 {
