@@ -1,46 +1,4 @@
 
- /*//////////////////////////////////
-FONT_FAMILY///////////////////
-//////////////////////////////////*/ 
-
-.section-career h3, .top-list li:last-child, .register-button, .register-button2 {
-
-font-family: 'Open Sans Condensed', sans-serif;
-
-}
- 
-body, .top-list li:nth-child(2), .drop-nav li:first-child, .drop-nav li:last-child {
-
-font-family: 'Open Sans', sans-serif;
-
-}
-
-.info-text h4, .info-text2 h4,  .contact-info h4, .contact-info h5, .meet-coach h4
-{
-font-family: 'Ideal Sans SSm A', 'Ideal Sans SSm B';
-}
-
-.intro-container p.intro-p, .section-break-final p, .intro-container h1  {
-font-family: 'Ideal Sans SSm A', 'Ideal Sans SSm B';
-}
-
-
-
-    
-    p.special-goodbye {
-font-family: 'Ideal Sans SSm A', 'Ideal Sans SSm B';
-        font-style: italic;
-    }
-
-
-
-.section-break blockquote, .quote-text blockquote {
-/*font-family: 'Lato', sans-serif;*/
-    font-family: 'Ideal Sans SSm A', 'Ideal Sans SSm B';
-    font-style: italic;
-}
-
-
 
 
 /*////////////////////////////////////////////// 
@@ -192,8 +150,9 @@ nav.top-nav {
 }
 
 .mobile-nav {
-display: -webkit-flex;
+
 display: flex;
+    display: -webkit-flex;
 position: fixed;
 width: 100%;
 align-items: center;
@@ -234,58 +193,41 @@ background: url(../images/journey-compressor.jpg) no-repeat center center;
 -moz-background-size: cover; 
 -o-background-size: cover; 
 background-size: cover;
-
-}
-
-.intro-container {
-position: absolute;
-margin: auto;
-top: 0; left: 0; bottom: 0; right: 0;
-width: 100%;
-height: 250px;
-/*border: 1px solid red; */
-    padding-top: 1.5em;
+display: flex;
+display: -webkit-flex;
+flex-direction: column;
+    -webkit-flex-direction: column;
+    justify-content: center;
+-webkit-justify-content: center;
 }
 
     
 #font1 {
-margin: 0 auto;
 color: white;
 text-align: center; 
-max-width: 250px;
-font-size: 1.5em;
-/*letter-spacing: .05em;*/
+font-size: 1.75em;
+letter-spacing: .02em;
 font-weight: normal;
 line-height: 1.25;
 align-self: center;
-    }
+margin-top: 1.5em;
+
+}
 
 
 
-.intro-container p.intro-p {
- font-size: 1em;
+.intro-p {
+font-size: .75em;
 text-align: center;
 color: white;
 margin: .2em auto;
-    font-weight: 200;
+font-weight: 200;
 }
 
-/*
-.intro-container h1 {
- font-size: 2.5em;
-    text-align: center;
-    color: white;
-margin: .2em auto;
-    text-shadow: -3px 4px 6px black;
-    font-weight: 300;
 
-}
-*/
-
-
-    .head-down-arrow {
- width: 80px;
-    height: 80px;
+.head-down-arrow {
+width: 80px;
+height: 80px;
 margin: 2.5em auto;
 }
     
@@ -361,12 +303,11 @@ color: #34415C;
  padding: 1.5em .5em;   
 }
 
-.info-text h4, .info-text2 h4 {
- text-align: center;
-  margin: 0 0 .75em 0;  
-
+.info-text h4, .info-text2 h4, .contact-info h4 {
+text-align: center;
+margin: 0 0 .75em 0;  
 font-weight: normal;
-    font-size: 3em;
+font-size: 2em;
 }
 
 
@@ -409,7 +350,7 @@ Meet the COACH SECTION///////////////////
 }
 .meet-coach p {
 line-height: 0;
-font-size: 2em;
+font-size: 1.25em;
 margin: 0;
 }
 
@@ -419,7 +360,7 @@ margin: 0;
 
 .meet-coach h4 { 
 line-height: 0;
-font-size: 4em; 
+font-size: 2em; 
     font-weight: normal;
 margin: .5em 0 1.25em 0; ;
 }
@@ -498,7 +439,7 @@ background-size: cover;
 .section-break blockquote, .quote-text blockquote {
  font-size: 1.1em;
     line-height: 1.6;
-    font-weight: 300;
+    font-weight: 200;
     font-style: italic;
 }
 
@@ -724,7 +665,7 @@ p.client-name {
 
 p.client-company {
  margin: -.3em 0 1em 0;   
- font-style: italic;
+
     font-weight: 300;
     font-size: .85em;
 }
@@ -733,23 +674,18 @@ p.client-company {
 Final SECTIONS BREAKS///////////////////
 //////////////////////////////////*/    
 .section-break-final {
- font-size: .85em;
-padding: 1em .5em;
-    text-align: center;
-    font-weight: 300;
+ font-size: 1.5em;
+text-align: center;
+font-weight: 300;
+display: flex;
+display: -webkit-flex;
+flex-direction: column;
+-webkit-flex-direction: column;
+justify-content: center;
+-webkit-justify-content: center;
+height: 75vh;
 }
-    .section-break-final p
-    {
-     margin: 2em 0;
 
-        font-weight: 100;
-        letter-spacing: .05em;
-    }
-    
-    p.special-goodbye {
-
-letter-spacing: 0;
-    }
 
 #special4 {
 background: url(../images/final-image.jpg) no-repeat center center;  
@@ -758,6 +694,13 @@ background: url(../images/final-image.jpg) no-repeat center center;
 -o-background-size: cover; 
 background-size: cover;   
  }
+
+    
+p.special-goodbye {
+font-style: italic;
+    font-size: 1em;
+}
+
    
     
 
@@ -773,7 +716,7 @@ Contact Form - Mobile///////////////////
     
     .contact-info h4 {
      margin: 0 0 -.25em 0;
-        font-size: 3em;
+        font-size: 1.5em;
         text-align: center;
     }
     
@@ -799,6 +742,32 @@ Contact Form - Mobile///////////////////
     }
 
 
+
+ /*//////////////////////////////////
+FONT_FAMILY///////////////////
+//////////////////////////////////*/ 
+
+
+
+body {
+  font-family: 'Open Sans', sans-serif;  
+}
+
+.section-career h3, .last-b, .register-button, .register-button2 {
+
+font-family: 'Open Sans Condensed', sans-serif;
+
+}
+
+h1, h2, h3, h4, h5, .section-break-final p, .ideal {
+  font-family: 'Ideal Sans SSm A', 'Ideal Sans SSm B';  
+}
+
+
+.section-break blockquote, .quote-text blockquote {
+font-family: 'Ideal Sans SSm A', 'Ideal Sans SSm B';
+font-style: italic;
+}
 
 
 
@@ -848,10 +817,8 @@ transition: all .4s ease-in-out;
     
     
 .section-career h3 {
-/* color: white;*/
 font-size: 1.75em;
-    margin: 0;
-
+margin: 0;
 font-weight: 300;
 }
 
@@ -880,24 +847,15 @@ margin: 1.5em auto;
 }
     
 
-        .section-break-final {
- font-size: 1.15em;
-padding: 1em 1em;
-    }
-    
-    .intro-container {
-height: 400px;
-padding-top: .5em;
-}
+
    
 #font1 { 
-max-width: 500px;
 font-size: 3em;
 line-height: 1.15;
-    }
+}
 
 
-.intro-container p.intro-p {
+.intro-p {
  font-size: 1.25em;
 }
 
@@ -932,38 +890,23 @@ height: 100vh;
 /*////////////////////////////////////////////// 
 DESKTOP - NAVIGATION, HEADER, and SERVICES SECTION
 ///////////////////////////////////////////////*/
- 
-     .intro-container {
-height: 30em;
-padding: 6em 0 0 0;
-}
+
    
 #font1 { 
-max-width: 100%;
-font-size: 5em;
+font-size: 4.85em;
 line-height: 1.2;
-/*text-shadow: -2px 2px 6px #696A80;*/
-/*    text-shadow: -2px 2px 13px #696A80;*/
-/*text-shadow: -1px 1px 2px #636669;*/
-    }
+margin: 1em 0 0 0;
+}
 
-.intro-container p.intro-p {
- font-size: 1.85em;
+.intro-p {
+ font-size: 1.5em;
     font-weight: 200;
 }
     
-/*
-#font {
 
-    letter-spacing: .1em;
-
-}
-*/
-    
-
-    .head-down-arrow {
- width: 80px;
-    height: 80px;
+.head-down-arrow {
+width: 80px;
+height: 80px;
 margin: 2.5em auto;
 }
     
@@ -1023,7 +966,7 @@ margin: 0 12px;
 flex-wrap: wrap;
 list-style: none;
     color: white;
-    font-size: .9em;
+    font-size: 1em;
 }
 
 
@@ -1047,7 +990,7 @@ margin-right: 47px;
 height: 100%;
 padding: .3em 10px;
 text-align: center;
-font-size: 1.15em;
+font-size: 1em;
 line-height: 1.5;
 color: white;
 margin-right: 15px;
@@ -1228,17 +1171,17 @@ margin: 0 auto;
 }
     
 .info-text p, .info-text2 p {
-font-size: 1.4em;
+font-size: 1.35em;
 line-height: 2;
 width: 80%;
-max-width: 800px;
+max-width: 750px;
 margin: 1.5em auto;
 font-weight: 300;
 
 }
     
     .info-text h4, .info-text2 h4 {
-     font-size: 3.5em; 
+     font-size: 3em; 
         font-weight: normal;
         font-weight: 300;
     }
@@ -1289,7 +1232,7 @@ z-index: 1;
   
 }
   .cabrina-bio h4 {  
-    font-size: 3.5em;
+    font-size: 3em;
       
   }
     
@@ -1327,6 +1270,11 @@ padding: 0;
 border-bottom-left-radius: 4px;
 border-bottom-right-radius: 4px;
 }
+    
+    .meet-coach p {
+     font-size: 1.85em;   
+        
+    }
     
     
 .container {
@@ -1386,8 +1334,9 @@ flex-flow: row wrap;
  }
   
 .quote-text blockquote, .section-break blockquote {
- font-size: 1.2em;
+ font-size: 1.15em;
     line-height: 1.6;
+    font-weight: 300;
 }
      
     
@@ -1490,26 +1439,23 @@ box-shadow: 0px 0px 16px 1px rgba(115,115,117,1);
 Contact SECTION ///////////////////
 //////////////////////////////////*/  
     
-    .section-break-final {
- font-size: 4em;
-  line-height: .5;
-padding: 10rem 0 12rem 0;
-         font-weight: 600;
-        font-style: normal;
+.section-break-final {
+font-size: 4.5em;
+line-height: .5;
+font-weight: 400;
+font-style: normal;
+    height: 90vh;
     }
-    
-    
-       .section-break-final p
+
+.section-break-final p
     {
-     margin: .75em 0;
-         font-weight: 400;
-    
-    text-shadow: 0px 2px 2px rgba(140, 140, 140, 0.75);
+margin: .5em 0;
+text-shadow: 0px 2px 2px rgba(140, 140, 140, 0.75);
     }
     
-       .section-break-final p.special-goodbye {
+.section-break-final p.special-goodbye {
 font-size: 2rem;
-              font-weight: 300;
+font-weight: 300;
     }
 
 
@@ -1517,13 +1463,13 @@ font-size: 2rem;
 Contact SECTION ///////////////////
 //////////////////////////////////*/    
        .contact-info h4 {
-        font-size: 3.5em;
+        font-size: 3em;
            font-weight: 300;
        }
     
       .contact-block h5 {
    font-weight: normal;
-        font-size: 2.5em;
+        font-size: 1.85em;
 
     }
     
@@ -1538,8 +1484,8 @@ Contact SECTION ///////////////////
    max-width: 525px;
        }
     .icon {
- height: 60px;
-    width: 60px;
+ height: 50px;
+    width: 50px;
 /*vertical-align:middle;*/
 /*    line-height: 1.5;*/
     margin-right: 4px;
