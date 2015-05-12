@@ -375,12 +375,6 @@ width: 200px;
  
 }
 
-.triangle {
-width: 175px;
-height: 175px;
-z-index: -1;
-position: absolute;
-}
 
 
 /*//////////////////////////////////
@@ -1287,12 +1281,6 @@ z-index: 2;
     line-height: 1.5;
 }
     
-.triangle {
-width: 175px;
-height: 175px;
-z-index: -1;
-position: absolute;
-}
 
     
 
