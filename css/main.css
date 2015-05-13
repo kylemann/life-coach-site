@@ -32,7 +32,9 @@ a {
 }
 
 a:hover {
-color: #34415C;
+/*color: #34415C;*/
+/*   color:#7698AA;*/
+    color: black;
 }
 
 img {
@@ -56,7 +58,8 @@ display: -webkit-flex;
 display: flex;
 align-items: center;
 -webkit-align-items: center;   
-  background-color: hsla(202, 31%, 63%, .95); 
+/*  background-color: hsla(202, 31%, 63%, .95); */
+   background-color: hsla(201, 18%, 31%, 0.75);
 padding: 5px;
 justify-content: center;
 -webkit-justify-content: center;
@@ -157,7 +160,8 @@ position: fixed;
 width: 100%;
 align-items: center;
 -webkit-align-items: center;   
-  background-color: hsla(202, 31%, 63%, .95);
+/*  background-color: hsla(202, 31%, 63%, .95);*/
+      background-color: hsla(201, 18%, 31%, 0.75);
 padding: 10px;
 justify-content: center;
 /*    margin: 0;*/
@@ -187,8 +191,8 @@ HEADER
 .intro-cover {
 margin: 0;
 width: 100%;
-height: 70vh;
-background: url(../images/journey-compressor.jpeg) no-repeat center center;
+height: 100vh;
+background: url(../images/change.jpeg) no-repeat center center;
 -webkit-background-size: cover; 
 -moz-background-size: cover; 
 -o-background-size: cover; 
@@ -218,7 +222,7 @@ text-shadow: -1px 0px 2px rgba(84, 84, 84, 0.75);
 
 
 .intro-p {
-font-size: .75em;
+font-size: .85em;
 text-align: center;
 color: white;
 margin: .2em auto;
@@ -489,7 +493,7 @@ Form Styling///////////////////
 
 label 
 {
-    font-size: 1.55em;
+    font-size: 1.25em;
     display:block;
     margin-top: .75em;
     letter-spacing:2px;
@@ -514,7 +518,7 @@ input, textarea, file {
 border: 1px solid #41545E;
 	padding:8px;
 	margin-top:3px;
-	font-size: .8em;
+	font-size: .9em;
 	color:#3a3a3a;
 }
 
@@ -544,8 +548,8 @@ textarea
 	margin:20px auto;
 	cursor:pointer;
     align-content: center;
-    background-color: #82A7BD;
-    border-bottom: 3px solid #93B8CF;
+    background-color: #41545E;
+    border-bottom: 3px solid #7698AA;
 /*      border-style: solid;*/
 /*
    border-top-color: #C2BBB7;
@@ -565,7 +569,7 @@ transition: all .4s ease-in-out;
 /* Styles the submit hover */	
 #submit:hover {
 	color: White;
-	background-color: #93B8CF;
+	background-color: #7698AA;
 }
 
     .container2 {
@@ -691,9 +695,9 @@ background-size: cover;
  }
 
     
-p.special-goodbye {
-font-style: italic;
-    font-size: 1em;
+.section-break-final p.special-goodbye {
+font-size: 1rem;
+ font-style: italic;   
 }
 
    
@@ -888,7 +892,7 @@ DESKTOP - NAVIGATION, HEADER, and SERVICES SECTION
 
    
 #font1 { 
-font-size: 5.25em;
+font-size: 5.15em;
 line-height: 1.1;
     font-weight: 400;
 margin: 1em 0 0 0;
@@ -926,12 +930,15 @@ nav.top-nav.sticky {
 -webkit-box-shadow: 0px 2px 7px 0px rgba(76, 76, 76, 0.75);
 -moz-box-shadow:    0px 2px 7px 0px rgba(76, 76, 76, 0.75);
 box-shadow:         0px 2px 7px 0px rgba(76, 76, 76, 0.75);
-background-color: hsla(202, 31%, 63%, .95);
+/*background-color: hsla(202, 31%, 63%, .65);*/
 /*  background-color:  hsla(201, 18%, 31%, 0.94);*/
+    background-color: hsla(201, 18%, 31%, 0.65);
+   
 }
     
 ul.drop-nav.sticky {
-background-color: hsla(202, 31%, 63%, .25);
+/*background-color: hsla(202, 31%, 63%, .25);*/
+     background-color: hsla(201, 18%, 31%, 0.2);
 -webkit-box-shadow: 0 8px 6px -6px rgba(76, 76, 76, 0.75);
 -moz-box-shadow: 0 8px 6px -6px rgba(76, 76, 76, 0.75);
 box-shadow: 0 8px 6px -6px rgba(76, 76, 76, 0.5);
@@ -941,10 +948,12 @@ li.last-b.sticky {
 /*      background-color: #82A7BD;   */
 }
     
+/*
 .top-list li.sticky, .top-list li.sticky:nth-child(2), .logo-description.sticky {
-/*  color: #41545E;   */
+  color: #41545E;   
         
     }
+*/
 
 
 .top-list {
@@ -1012,7 +1021,7 @@ nav.top-list li:last-child {
 */
     
         li.last-b.sticky:hover {
-    background-color: #93B8CF;    
+    background-color: #7698AA;    
     }
     
     
@@ -1210,7 +1219,7 @@ transition: all .4s ease-in-out;
     }
         
 .register-button:hover, .register-button2:hover {
- background-color: #93B8CF;
+ background-color: #7698AA;
     color: white;
 }
     
