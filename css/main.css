@@ -188,7 +188,7 @@ HEADER
 margin: 0;
 width: 100%;
 height: 70vh;
-background: url(../images/journey-compressor.jpg) no-repeat center center;
+background: url(../images/journey-compressor.jpeg) no-repeat center center;
 -webkit-background-size: cover; 
 -moz-background-size: cover; 
 -o-background-size: cover; 
@@ -206,11 +206,12 @@ flex-direction: column;
 color: white;
 text-align: center; 
 font-size: 1.75em;
-letter-spacing: .02em;
+letter-spacing: .01em;
 font-weight: normal;
 line-height: 1.25;
 align-self: center;
 margin-top: 1.5em;
+text-shadow: -1px 0px 2px rgba(84, 84, 84, 0.75);
 
 }
 
@@ -887,9 +888,12 @@ DESKTOP - NAVIGATION, HEADER, and SERVICES SECTION
 
    
 #font1 { 
-font-size: 4.85em;
-line-height: 1.2;
+font-size: 5.25em;
+line-height: 1.1;
+    font-weight: 400;
 margin: 1em 0 0 0;
+    text-shadow: -1px 0px 2px rgba(130, 130, 130, 0.75);
+    letter-spacing: .01em;
 }
 
 .intro-p {
@@ -1051,7 +1055,7 @@ padding: 3px 1px 3px 5px;
 /*margin: 0;*/
 /*    margin-top: 100px;*/
 border-radius: 3px;
-width: 145px;
+width: 10.5em;
 
 }
 
