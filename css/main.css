@@ -215,7 +215,7 @@ font-weight: normal;
 line-height: 1.25;
 align-self: center;
 margin-top: 1.5em;
-text-shadow: -1px 0px 2px rgba(84, 84, 84, 0.75);
+/*text-shadow: -1px 0px 2px rgba(84, 84, 84, 0.75);*/
 
 }
 
@@ -896,7 +896,8 @@ font-size: 5.15em;
 line-height: 1.1;
     font-weight: 400;
 margin: 1em 0 0 0;
-    text-shadow: -1px 0px 2px rgba(130, 130, 130, 0.75);
+/*    text-shadow: -1px 0px 2px rgba(130, 130, 130, 0.75);*/
+    text-shadow: -1px 0px 1px rgba(45, 45, 45, 0.74);
     letter-spacing: .01em;
 }
 
