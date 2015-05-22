@@ -32,7 +32,7 @@ a {
  
 }
 
-ul a {
+ul a, #contact a {
  
            -webkit-transition: all .4s ease-in-out;
 -moz-transition: all .4s ease-in-out;
@@ -44,6 +44,10 @@ a:hover {
 /*   color:#7698AA;*/
     color: black;
 /* color:#8FB9CF;*/
+}
+
+#contact a:hover {
+  color:#8FB9CF;  
 }
 
 img {
