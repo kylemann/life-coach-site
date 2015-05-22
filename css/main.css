@@ -828,6 +828,11 @@ border: 1px solid #41545E;
         border-radius: 5px;
 */
     }
+    
+  .services a:hover {
+   color: inherit;
+  }
+    
 .section-career {  
 margin: 0;
 width: 33.3333333%;
@@ -1040,17 +1045,11 @@ border-radius: 3px;
 }
     
     
-nav.top-list li:last-child {
-/*    background-color: #D16758;  */
-}
-/*
-.top-list li:last-child:hover {
-    background-color: #93B8CF;    
-    }
-*/
+
+
     
         li.last-b.sticky:hover {
-/*    background-color: #7698AA;    */
+
               background-color:#8FB9CF;
     }
     
