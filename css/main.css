@@ -1,53 +1,28 @@
-
-
-
 /*////////////////////////////////////////////// 
 General Styling - Body, Links, Img, Logo, Lines
 ///////////////////////////////////////////////*/
 
 * {
- box-sizing: border-box;   
-    
+box-sizing: border-box;       
+}
+
+a {
+text-decoration: none;   
+color: inherit; 
+}
+
+a:hover {
+color: black;
 }
 
 body {
-
 margin: 0;
 padding: 0;
 color: #41545E;
 }
 
-p {
-    margin: 1.5em auto 0 auto;
-} 
-
-.info-text p, .info-text2 p {
-    
-margin: 1.5em auto 0 auto;
-} 
-
-a {
- text-decoration: none;   
- color: inherit; 
- 
-}
-
-ul a, #contact a {
- 
-           -webkit-transition: all .4s ease-in-out;
--moz-transition: all .4s ease-in-out;
--o-transition: all .4s ease-in-out;
-transition: all .4s ease-in-out;
-}
-a:hover {
-/*color: #34415C;*/
-/*   color:#7698AA;*/
-    color: black;
-/* color:#8FB9CF;*/
-}
-
 #contact a:hover {
-  color:#8FB9CF;  
+color:#8FB9CF;  
 }
 
 img {
@@ -62,51 +37,51 @@ align-self: center;
 
 .img-mobile {
  width: 32px;
-height: 32px;   
-    
+height: 32px;      
 }
+
+.info-text p, .info-text2 p {
+margin: 1.5em auto 0 auto;
+}
+
+.icon {
+height: 30px;
+width: 30px;
+margin-right: 3px;
+}
+
 
 .logo-mobile {
 display: -webkit-flex;
 display: flex;
 align-items: center;
 -webkit-align-items: center;   
-/*  background-color: hsla(202, 31%, 63%, .95); */
-   background-color: hsla(201, 18%, 31%, 0.75);
+background-color: hsla(201, 18%, 31%, 0.75);
 padding: 5px;
 justify-content: center;
 -webkit-justify-content: center;
-/*margin: 0;*/
-/*margin-top: -28px;*/
 position: fixed;
 width: 100%;
-    z-index: 99;
+z-index: 99;
 }
 
 .logo-section {
- margin-right: 7px;
-    
-}
-
-.title-section {
-/*   flex-grow: 2;*/
-    text-align: center;
+margin-right: 7px;   
 }
 
 .logo-title {
-   font-size: 1em;  
+font-size: 1em;  
 color: white;
 }
+
 .logo-description {
-     font-size: .65em;
-    color: white;
+font-size: .65em;
+color: white;
 }
 
-    
 .mask { 
 height: 1px; 
-/*margin: 4px 0;*/
-    margin: 2px auto;
+margin: 2px auto;
 width: 80%; 
 border-radius: 1px;
 border-bottom: 1px solid white;
@@ -133,73 +108,87 @@ border-bottom: 1px solid grey;
 
 .mask4 { 
 height: 1px; 
-/*margin: 4px 0;*/
 margin: 3.5em auto;
 width: 60%;
-    max-width: 900px;
+max-width: 900px;
 border-radius: 1px;
 border-bottom: 1px solid grey;
 }
 
+p {
+margin: 1.5em auto 0 auto;
+} 
 
-.icon {
- height: 30px;
-    width: 30px;
-/*vertical-align:middle;*/
-/*    line-height: 1.5;*/
-    margin-right: 3px;
+ul a, #contact a {
+-webkit-transition: all .4s ease-in-out;
+-moz-transition: all .4s ease-in-out;
+-o-transition: all .4s ease-in-out;
+transition: all .4s ease-in-out;
 }
 
-
-
+.title-section {
+text-align: center;
+}
 
 
 /*////////////////////////////////////////////// 
 Navigation MENU
 ///////////////////////////////////////////////*/
 
-nav.top-nav {
- display: none;   
- margin: 0;
-    padding: 0;
-    z-index: 100;
-}
-
 .mobile-nav {
-
 display: flex;
-    display: -webkit-flex;
+display: -webkit-flex;
 position: fixed;
 width: 100%;
 align-items: center;
 -webkit-align-items: center;   
-/*  background-color: hsla(202, 31%, 63%, .95);*/
-      background-color: hsla(201, 18%, 31%, 0.75);
+background-color: hsla(201, 18%, 31%, 0.75);
 padding: 10px;
 justify-content: center;
-/*    margin: 0;*/
-    margin-top: 45px;
+margin-top: 45px;
 border-top: 2px solid white;
 -webkit-box-shadow: 0px 3px 11px 0px rgba(76, 76, 76, 0.75);
 -moz-box-shadow:    0px 3px 11px 0px rgba(76, 76, 76, 0.75);
 box-shadow:         0px 3px 11px 0px rgba(76, 76, 76, 0.75);
-    z-index: 100;
+z-index: 100;
 }
 
 .mobile-nav li {
 flex-grow: 1; 
-    -webkit-flex-grow: 1;
+-webkit-flex-grow: 1;
 text-align: center;
 color: white;
 list-style: none;
 font-size: 1em;
 }
 
+nav.top-nav {
+display: none;   
+margin: 0;
+padding: 0;
+z-index: 100;
+}
 
 /*////////////////////////////////////////////// 
 HEADER
 ///////////////////////////////////////////////*/
 
+#font1 {
+color: white;
+text-align: center; 
+font-size: 1.75em;
+letter-spacing: .01em;
+font-weight: normal;
+line-height: 1.25;
+align-self: center;
+margin-top: 1.5em;
+}
+
+.head-down-arrow {
+width: 80px;
+height: 80px;
+margin: 2.5em auto;
+}
 
 .intro-cover {
 margin: 0;
@@ -213,26 +202,10 @@ background-size: cover;
 display: flex;
 display: -webkit-flex;
 flex-direction: column;
-    -webkit-flex-direction: column;
-    justify-content: center;
+-webkit-flex-direction: column;
+justify-content: center;
 -webkit-justify-content: center;
 }
-
-    
-#font1 {
-color: white;
-text-align: center; 
-font-size: 1.75em;
-letter-spacing: .01em;
-font-weight: normal;
-line-height: 1.25;
-align-self: center;
-margin-top: 1.5em;
-/*text-shadow: -1px 0px 2px rgba(84, 84, 84, 0.75);*/
-
-}
-
-
 
 .intro-p {
 font-size: .85em;
@@ -242,40 +215,27 @@ margin: .2em auto;
 font-weight: 200;
 }
 
-
-.head-down-arrow {
-width: 80px;
-height: 80px;
-margin: 2.5em auto;
-}
     
-    
-
-
 /*////////////////////////////////////////////// 
 Header Services Sections 
 ///////////////////////////////////////////////*/
 
-.section-image {
- width: 40px;
-    height: 40px;
-margin: 2.5em auto;
-    
-}
-
-.services {
-    
- display: none;   
-}
-
 .grey {
-background-color: #F7FAFA;    
-    
+background-color: #F7FAFA;       
 }
 
 .grey-o {
- background-color: hsla(209, 23%, 66%, .75);   
-    
+background-color: hsla(209, 23%, 66%, .75);      
+}
+
+.section-image {
+width: 40px;
+height: 40px;
+margin: 2.5em auto;
+}
+
+.services {
+display: none;   
 }
 
 .white-text {
@@ -286,19 +246,17 @@ background-color: #F7FAFA;
 DISCOVERY SECTION///////////////////
 //////////////////////////////////*/
 
+.center {
+text-align: center;
+}
+
 .information {
 display: -webkit-flex;
 display: flex;
 flex-direction: column;
 -webkit-flex-direction: column;
-/*background-color: #FCFFFF;*/
 margin: 0 auto;
-/*align-items: stretch;*/
-    padding: 3em .5em;
-}
-
-.reverse-p {
-    padding: 0 .5em .5em .5em;
+padding: 3em .5em;
 }
 
 .information p {
@@ -310,15 +268,8 @@ line-height: 1.7;
 font-size: 1.75em;   
 }
 
-.text-display, .text-display1 {
-text-align: center;
-font-size: 4em;
-color: #34415C;
-
-}
-
 .info-text, .cabrina-bio, info-text2 {
- padding: 1.5em .5em;  
+padding: 1.5em .5em;  
    
 }
 
@@ -329,11 +280,15 @@ font-weight: normal;
 font-size: 2em;
 }
 
-.center {
- text-align: center;
+.text-display, .text-display1 {
+text-align: center;
+font-size: 4em;
+color: #34415C;
 }
 
-
+.reverse-p {
+padding: 0 .5em .5em .5em;
+}
 
 .register-button, .register-button2 {
 padding: 10px 5px; 
@@ -343,8 +298,7 @@ border-radius: 4px;
 text-align: center;
 width: 75%;
 margin: 20px auto 0 auto;
-
-    font-weight: 300;
+font-weight: 300;
 }
 
 .register-button {
@@ -353,38 +307,26 @@ color: white;
 
 .register-button2 {
 color: inherit;
-    border: 2px solid #41545E;
+border: 2px solid #41545E;
 }
 
 .register-button {
-
-    border: 2px solid white;
+border: 2px solid white;
 }
-
 
 
 /*//////////////////////////////////
 Meet the COACH SECTION///////////////////
 //////////////////////////////////*/
 
-.meet-coach {
- text-align: center;
-    padding: 40px 5px;
-}
-.meet-coach p {
-line-height: 0;
-font-size: 1.25em;
-margin: 0;
-}
-
 .cabrina-bio {
- z-index: 1;   
+z-index: 1;   
 }
 
 .meet-coach h4 { 
 line-height: 0;
 font-size: 2em; 
-    font-weight: normal;
+font-weight: normal;
 margin: .5em 0 1.25em 0; ;
 }
 
@@ -394,49 +336,57 @@ height: 200px;
 width: 200px;
 }
 .cabrina-mobile img {
-   border-radius: 100%; 
- 
+border-radius: 100%; 
 }
 
+.meet-coach {
+text-align: center;
+padding: 40px 5px;
+}
 
+.meet-coach p {
+line-height: 0;
+font-size: 1.25em;
+margin: 0;
+}
 
 /*//////////////////////////////////
 Life Coaching Services SECTION///////////////////
 //////////////////////////////////*/    
  
 .down-arrow {
- width: 30px;
-    height: 30px;
+width: 30px;
+height: 30px;
 margin: 0 auto;
 }
-
-.head-down-arrow {
- width: 60px;
-    height: 60px;
-margin: 1.5em auto;
-}
-
 
 .direction-reverse {
 flex-direction: column-reverse;   
 }
 
+.head-down-arrow {
+width: 60px;
+height: 60px;
+margin: 1.5em auto;
+}
+
  /*//////////////////////////////////
 Section Breaks///////////////////
 //////////////////////////////////*/  
-    
-        
-        
+           
 .cover {
 margin: 0 auto;
 width: 100%;
-/*height: 75vh;*/
 padding: 0;
+}
 
-    }
+cite {
+font-size: .9em;
+line-height: 1.5;   
+}
 
 #cover1 {
-     background: url(../images/Optimized-section2.jpeg) no-repeat center center;
+background: url(../images/Optimized-section2.jpeg) no-repeat center center;
 -webkit-background-size: cover; 
 -moz-background-size: cover; 
 -o-background-size: cover; 
@@ -444,26 +394,24 @@ background-size: cover;
 }
 
 .section-break {
- padding: 50px 10px;
-    color: white;
- 
+padding: 50px 10px;
+color: white;
 }
 
 .section-break section {
-    z-index: 1;   
+z-index: 1;   
 }
+
 
 .section-break blockquote, .quote-text blockquote {
- font-size: 1.1em;
-    line-height: 1.6;
-    font-weight: 200;
-    font-style: italic;
+font-size: 1.1em;
+line-height: 1.6;
+font-weight: 200;
+font-style: italic;
 }
 
-
 .section-break h4 {
- text-align: center;   
-    
+text-align: center;       
 }
 
 .quote {
@@ -474,32 +422,25 @@ position: relative;
 margin-bottom: -20px;
 }
 
-cite {
- font-size: .9em;
-    line-height: 1.5;
-    
-}
- //////////////////////////////////
-Company Review///////////////////
-//////////////////////////////////  
-    
 
-.company-logo {
- height: 40px;
-    width: 40px;
-    margin: 5em .5em;
+ /*//////////////////////////////////
+Company Review///////////////////
+//////////////////////////////////*/  
     
+.company-logo {
+height: 40px;
+width: 40px;
+margin: 5em .5em;
 }
 
 .flow {
-    
-   display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-flex-flow: row wrap;
-  justify-content: space-around;   
+display: -webkit-box;
+display: -moz-box;
+display: -ms-flexbox;
+display: -webkit-flex;
+display: flex;
+-webkit-flex-flow: row wrap;
+justify-content: space-around;   
 }
 
  /*//////////////////////////////////
@@ -511,74 +452,61 @@ Form Styling///////////////////
 
 label 
 {
-    font-size: 1.25em;
-    display:block;
-    margin-top: .75em;
-    letter-spacing:2px;
+font-size: 1.25em;
+display:block;
+margin-top: .75em;
+letter-spacing:2px;
 }
 
 /* Centres the form within the page */
 form 
 {
-    margin:0 auto;
-    width: 99%;
+margin:0 auto;
+width: 99%;
 }
 
 /* Styles the text boxes */
 input, textarea, file {
-	width:99%;
-	height:33px;
-/*	background-color:#efefef;*/
-	border-radius: 2px;
-	-moz-border-radius:2px;
-	-webkit-border-radius:2px;
-    
+width:99%;
+height:33px;
+border-radius: 2px;
+-moz-border-radius:2px;
+-webkit-border-radius:2px;
 border: 1px solid #41545E;
-	padding:8px;
-	margin-top:3px;
-	font-size: .9em;
-	color:#3a3a3a;
+padding:8px;
+margin-top:3px;
+font-size: .9em;
+color:#3a3a3a;
 }
 
 input:focus, textarea:focus {
-/*		border:1px solid;*/
-   background-color: white;
-    opacity: .9;
+background-color: white;
+opacity: .9;
 	}
 
 /* Styles the text area boxes (message field) */	
 textarea 
 {
-	height:213px;
-/*	background-color: #efefef;*/
-    border: 1px solid #41545E;
+height:213px;
+border: 1px solid #41545E;
 }
 
 
 /* Styles the submit button */
 #submit {
-	/* background:url(images/submit.png); */
-	width: 100%;
-	height:48px;
-	text-align: center;
-/*	 text-indent:-9999px; */
-	border:none;
-	margin:20px auto;
-	cursor:pointer;
-    align-content: center;
-    background-color: #41545E;
-    border-bottom: 3px solid #7698AA;
-/*      border-style: solid;*/
-/*
-   border-top-color: #C2BBB7;
-    border-right-color: #5C5653;
-    border-left-color: #C2BBB7;
-    border-width: 3px;
-*/
-    color: white;
-    font-size: 1.2em;
-    border-radius: 2px;
-    -webkit-transition: all .4s ease-in-out;
+width: 100%;
+height:48px;
+text-align: center;
+border:none;
+margin:20px auto;
+cursor:pointer;
+align-content: center;
+background-color: #41545E;
+border-bottom: 3px solid #7698AA;
+color: white;
+font-size: 1.2em;
+border-radius: 2px;
+-webkit-transition: all .4s ease-in-out;
 -moz-transition: all .4s ease-in-out;
 -o-transition: all .4s ease-in-out;
 transition: all .4s ease-in-out;
@@ -586,31 +514,22 @@ transition: all .4s ease-in-out;
 
 /* Styles the submit hover */	
 #submit:hover {
-	color: White;
-/*	background-color: #7698AA;*/
-    
-    background-color:#8FB9CF;
+color: White;
+background-color:#8FB9CF;
 }
 
-    .container2 {
-     width: 90%;
+.container2 {
+width: 90%;
 margin: 0 auto;
-    }
+}
 
 
-  /*//////////////////////////////////
+/*//////////////////////////////////
 Background Images - Mobile///////////////////
 //////////////////////////////////*/     
-    
-    
-        
+           
 .special3 {
-             background: url(../images/journey-compressor.jpg) no-repeat center center;
--webkit-background-size: cover; 
--moz-background-size: cover; 
--o-background-size: cover; 
-background-size: cover;   
-     
+background: url(../images/journey-compressor.jpg) no-repeat center center;      
  }
 
 
@@ -618,80 +537,61 @@ background-size: cover;
 TESTIMONIAL SECTIONS BREAKS///////////////////
 //////////////////////////////////*/
 
-#special1 {
-background: url(../images/mtn-compressor1.jpg) no-repeat center center;
-  -webkit-background-size: cover; 
--moz-background-size: cover; 
--o-background-size: cover; 
-background-size: cover;    
- }
-    
-    #special2 {
-background: url(../images/desktop-test1.jpg) no-repeat center center;  
-  -webkit-background-size: cover; 
--moz-background-size: cover; 
--o-background-size: cover; 
-background-size: cover;   
- }
-
 .client-image {
- height: 100px;
-    width: 100px;
-    border-radius: 100%;
-
-    margin: 0 auto;
+height: 100px;
+width: 100px;
+border-radius: 100%;
+margin: 0 auto;
 }
 
 #client {
-
 background: url(../images/review-pic.jpg) no-repeat center center;
--webkit-background-size: cover; 
--moz-background-size: cover; 
--o-background-size: cover; 
-background-size: cover;
-
 }
 
 #client2 {
-
 background: url(../images/review-pic2.jpg) no-repeat center center;
--webkit-background-size: cover; 
--moz-background-size: cover; 
--o-background-size: cover; 
-background-size: cover;
-
 }
 
 #client3 {
-
 background: url(../images/brian-photo.jpg) no-repeat center center;
+}
+
+#special1 {
+background: url(../images/mtn-compressor1.jpg) no-repeat center center;
+}
+    
+#special2 {
+background: url(../images/desktop-test1.jpg) no-repeat center center;  
+}
+
+.pic-image p {
+text-align: center;   
+}
+
+p.client-name {
+font-size: 1.65em;
+font-weight: bold;
+margin: .175em 0 0 0;
+}
+
+p.client-company {
+margin: -.3em 0 1em 0;   
+font-weight: 300;
+font-size: .85em;
+}
+
+#client3, #client2, #client, #special2, #special1, .special3 {
 -webkit-background-size: cover; 
 -moz-background-size: cover; 
 -o-background-size: cover; 
 background-size: cover;
 
-}
-.pic-image p {
- text-align: center;   
-}
-
-p.client-name {
-    font-size: 1.65em;
-    font-weight: bold;
-    margin: .175em 0 0 0;
-    
-}
-
-p.client-company {
- margin: -.3em 0 1em 0;   
-
-    font-weight: 300;
-    font-size: .85em;
 }
 
 /*//////////////////////////////////
 Final SECTIONS BREAKS///////////////////
 //////////////////////////////////*/    
+
 .section-break-final {
  font-size: 1.5em;
 text-align: center;
@@ -705,86 +605,69 @@ justify-content: center;
 height: 75vh;
 }
 
-
 #special4 {
 background: url(../images/final-image.jpg) no-repeat center center;  
-  -webkit-background-size: cover; 
+-webkit-background-size: cover; 
 -moz-background-size: cover; 
 -o-background-size: cover; 
 background-size: cover;   
  }
-
-    
+   
 .section-break-final p.special-goodbye {
 font-size: 1rem;
  font-style: italic;   
 }
 
-   
-    
 
-
-
-  /*//////////////////////////////////
+/*//////////////////////////////////
 Contact Form - Mobile///////////////////
 //////////////////////////////////*/     
     
+.contact-info h4 {
+margin: 0 0 -.25em 0;
+font-size: 1.5em;
+text-align: center;
+}
     
-
-
+.contact-info h5 {
+margin: .5em 0 -.65em 0;
+font-size: 1.75em;
+text-align: center;
+}
     
-    .contact-info h4 {
-     margin: 0 0 -.25em 0;
-        font-size: 1.5em;
-        text-align: center;
-    }
-    
-        .contact-info h5 {
-     margin: .5em 0 -.65em 0;
-        font-size: 1.75em;
-            text-align: center;
-    }
-    
-        .contact-info p {
-        font-size: 1.75em;
-/*            line-height: 1.45;*/
-            max-width: 550px;
-            text-align: center;
-            font-weight: 300;
-         
-    }
-    
-     .contact-info p.left {
-       font-size: 1em;
-            line-height: 1.35;  
-   max-width: 375px;
-    }
-
-.small-caps {
- font-variant: small-caps;
-    font-size: 1.25em;
+.contact-info p {
+font-size: 1.75em;
+max-width: 550px;
+text-align: center;
+font-weight: 300;
 }
 
+.contact-info p.left {
+font-size: 1em;
+line-height: 1.35;  
+max-width: 375px;
+}
+
+.small-caps {
+font-variant: small-caps;
+font-size: 1.25em;
+}
 
 
  /*//////////////////////////////////
 FONT_FAMILY///////////////////
 //////////////////////////////////*/ 
 
-
-
 body {
-  font-family: 'Open Sans', sans-serif;  
+font-family: 'Open Sans', sans-serif;  
 }
 
 .section-career h3, .last-b, .register-button, .register-button2 {
-
 font-family: 'Open Sans Condensed', sans-serif;
-
 }
 
 h1, h2, h3, h4, h5, .section-break-final p, .ideal {
-  font-family: 'Ideal Sans SSm A', 'Ideal Sans SSm B';  
+font-family: 'Ideal Sans SSm A', 'Ideal Sans SSm B';  
 }
 
 
@@ -807,44 +690,38 @@ Tablet VERSION - MEDIA QUERIES
 
 @media only screen and (min-width: 690px) {
     
-    .services {
+#font1 { 
+font-size: 3em;
+line-height: 1.15;
+}
+    
+.services {
 display: -webkit-flex;
 display: flex;
 -webkit-flex-wrap: wrap;
 flex-wrap: wrap;
 flex-direction: row;
 -webkit-flex-direction: row;
+width: 90%;
+max-width: 700px;
+margin: -5em auto 6em auto;
 }
-    
-    
-        /*Services Section*/   
-    
-    .services {
-     width: 90%;
-  max-width: 700px;
-      margin: -5em auto 6em auto;
-/*
-border: 1px solid #41545E;
-        border-radius: 5px;
-*/
-    }
-    
-  .services a:hover {
-   color: inherit;
-  }
+
+.services a:hover {
+color: inherit;
+}
     
 .section-career {  
 margin: 0;
 width: 33.3333333%;
-    -webkit-transition: all .4s ease-in-out;
+-webkit-transition: all .4s ease-in-out;
 -moz-transition: all .4s ease-in-out;
 -o-transition: all .4s ease-in-out;
 transition: all .4s ease-in-out;
-    padding: 1.5em 0;
-    text-align: center;
-    }
-    
-    
+padding: 1.5em 0;
+text-align: center;
+}
+       
 .section-career h3 {
 font-size: 1.75em;
 margin: 0;
@@ -852,42 +729,18 @@ font-weight: 300;
 }
 
 .section-career p {
-/*    color: white;*/
-    font-size: 1em;
-    margin: 0;
+font-size: 1em;
+margin: 0;
 }
-
-    
+   
 .section-image {
-margin: 1.5em auto;
-    
+margin: 1.5em auto;    
 }
 
-    
-    .section-career a {
-     width: 100%;
-        height: 100%;
-    }
-    
-   
-  
-.info-text, .cabrina-bio, .info-text2 {
- padding: 2em;   
+.section-career a {
+width: 100%;
+height: 100%;
 }
-    
-
-
-   
-#font1 { 
-font-size: 3em;
-line-height: 1.15;
-}
-
-
-.intro-p {
- font-size: 1.25em;
-}
-
     
 }
     
@@ -906,14 +759,12 @@ DESKTOP VERSION - MEDIA QUERIES
     
     
 .logo-mobile, .mobile-nav {
- display: none;
-
+display: none;
 }
     
-    .intro-cover {
+.intro-cover {
 height: 100vh;
-    }
-    
+}
 
     
 /*////////////////////////////////////////////// 
@@ -924,19 +775,17 @@ DESKTOP - NAVIGATION, HEADER, and SERVICES SECTION
 #font1 { 
 font-size: 5.15em;
 line-height: 1.1;
-    font-weight: 400;
+font-weight: 400;
 margin: 1em 0 0 0;
-/*    text-shadow: -1px 0px 2px rgba(130, 130, 130, 0.75);*/
-    text-shadow: -1px 0px 1px rgba(45, 45, 45, 0.74);
-    letter-spacing: .01em;
+text-shadow: -1px 0px 1px rgba(45, 45, 45, 0.74);
+letter-spacing: .01em;
 }
 
 .intro-p {
- font-size: 1.5em;
-    font-weight: 200;
+font-size: 1.5em;
+font-weight: 200;
 }
     
-
 .head-down-arrow {
 width: 80px;
 height: 80px;
@@ -961,10 +810,7 @@ nav.top-nav.sticky {
 -webkit-box-shadow: 0px 2px 7px 0px rgba(76, 76, 76, 0.75);
 -moz-box-shadow:    0px 2px 7px 0px rgba(76, 76, 76, 0.75);
 box-shadow:         0px 2px 7px 0px rgba(76, 76, 76, 0.75);
-/*background-color: hsla(202, 31%, 63%, .65);*/
-/*  background-color:  hsla(201, 18%, 31%, 0.94);*/
-    background-color: hsla(201, 18%, 31%, 0.65);
-   
+background-color: hsla(201, 18%, 31%, 0.65);
 }
     
 ul.drop-nav.sticky {
@@ -974,18 +820,6 @@ ul.drop-nav.sticky {
 -moz-box-shadow: 0 8px 6px -6px rgba(76, 76, 76, 0.75);
 box-shadow: 0 8px 6px -6px rgba(76, 76, 76, 0.5);
 }
-    
-li.last-b.sticky {
-/*      background-color: #82A7BD;   */
-}
-    
-/*
-.top-list li.sticky, .top-list li.sticky:nth-child(2), .logo-description.sticky {
-  color: #41545E;   
-        
-    }
-*/
-
 
 .top-list {
 display: -webkit-flex;
@@ -1003,12 +837,9 @@ margin: 0 12px;
 -webkit-flex-wrap: wrap;
 flex-wrap: wrap;
 list-style: none;
-    color: white;
-    font-size: 1em;
-   
-
+color: white;
+font-size: 1em;
 }
-
 
 .top-list li:nth-child(2) {
 margin-right: auto;  
@@ -1024,8 +855,7 @@ padding: 0;
 .top-list li:nth-child(5) {
 margin-right: 47px;
 }
-    
-    
+       
 .top-list li:last-child {
 height: 100%;
 padding: .3em 10px;
@@ -1041,43 +871,31 @@ font-weight: 300;
 transition: all .4s ease-in-out;
 border: 1px solid white;
 border-radius: 3px;
-    s
 }
     
-    
-
-
-    
-        li.last-b.sticky:hover {
-
-              background-color:#8FB9CF;
-    }
-    
-    
+li.last-b.sticky:hover {
+background-color:#8FB9CF;
+}   
     
 .logo-title {
-   font-size: 1.85em;  
+font-size: 1.85em;  
 font-weight: bold;
 }
-.logo-description {
-     font-size: .85em;
 
+.logo-description {
+font-size: .85em;
 }
 
 .mask { 
-
 margin: 5px 0;
 width: 100%; 
-
 }
     
 .mask2 { 
 border-bottom: 5px solid white;
 margin: 3em auto;
 width: 15%; 
-
 }
-
 
     
 /*DROP DOWN MENU*/
@@ -1085,22 +903,17 @@ width: 15%;
 .dropdown {
 position: relative;
 }
+
 .drop-nav {
 position: absolute;
 display: none;
-/*background: #95AABD;*/
 padding: 3px 1px 3px 5px;
-/*margin: 0;*/
-/*    margin-top: 100px;*/
 border-radius: 3px;
 width: 10.5em;
-
 }
 
 
 .drop-nav li:first-child {
-
-
 padding: 0;
 margin: 15px 0;
 }
@@ -1109,8 +922,6 @@ margin: 15px 0;
 margin: 15px 0;
 padding: 0;
 text-align: left;
-
-
 }
     
 .drop-nav li:last-child {
@@ -1122,15 +933,15 @@ font-size: 1em;
 line-height: inherit;
 color: white;
 margin-right: 0;
-    padding-left: 0;
+padding-left: 0;
 margin-bottom: 5px;
-    font-weight: inherit;
+font-weight: inherit;
 border: none;
 }
     
-      .drop-nav li:last-child:hover {
-    background-color: none;    
-    }
+.drop-nav li:last-child:hover {
+background-color: none;    
+}
 
 .drop-nav li {
 margin: 15px 0;
@@ -1146,52 +957,37 @@ z-index: 3000;
 /*//////////////////////////////////
 DISCOVERY SECTION///////////////////
 //////////////////////////////////*/
-
+    
 .information {
 flex-direction: row;
 -webkit-flex-direction: row;
-/*
- align-items: center;
--webkit-align-items: center;
-*/
-    padding: 0;
+padding: 0;
 }
     
-        .services {
-     width: 90%;
-  max-width: 700px;
-      margin: -8em auto 9em auto;
-        }
     
-    .align {
-      align-items: center;
+.align {
+align-items: center;
 -webkit-align-items: center;   
-        
-    }
+}
+
+.align-self {
+align-self: center;
+-webkit-align-self: center;      
+}
     
-    .align-self {
-     align-self: center;
-    -webkit-align-self: center;      
-    }
-    
-    .change {
+.change {
 flex-direction: column;
 -webkit-flex-direction: column;
-        padding: 8em 0;
+padding: 8em 0;
 }
     
-/*
-    
-    .change.info-text {
-font-size: 1em;
-    }
-*/
     
 .text-display {
  width: 25%; 
 padding:  2.25em 20px 20px 20px;
      padding: 7em 1em;
 }
+    
 
 .info-text {
 width: 100%;
@@ -1216,41 +1012,44 @@ font-weight: 300;
 
 }
     
-    .info-text h4, .info-text2 h4 {
-     font-size: 3em; 
-        font-weight: normal;
-        font-weight: 300;
-    }
+.info-text h4, .info-text2 h4 {
+font-size: 3em; 
+font-weight: normal;
+font-weight: 300;
+}
   
 
 .register-button, .register-button2  {
  margin-top: 50px;
-
-
-    -webkit-transition: all .4s ease-in-out;
+-webkit-transition: all .4s ease-in-out;
 -moz-transition: all .4s ease-in-out;
 -o-transition: all .4s ease-in-out;
 transition: all .4s ease-in-out;
-  font-size: 1.15em;  
+font-size: 1.15em;  
 }
     
 .register-button  {
-    width: 50%;
-    max-width: 200px;
-    padding: .5em;
-    font-size: 1.5em;
-    }
+width: 50%;
+max-width: 200px;
+padding: .5em;
+font-size: 1.5em;
+}
     
-    .register-button2  {
-    width: 40%;
-          max-width: 14em;
-        padding: .5em 0;
-    }
+.register-button2  {
+width: 40%;
+max-width: 14em;
+padding: .5em 0;
+}
         
 .register-button:hover, .register-button2:hover {
-/* background-color: #7698AA;*/
-      background-color:#8FB9CF;
-    color: white;
+background-color:#8FB9CF;
+color: white;
+}
+    
+.services {
+width: 90%;
+max-width: 700px;
+margin: -8em auto 9em auto;
 }
     
 /*//////////////////////////////////
@@ -1264,13 +1063,22 @@ display: none;
 .cabrina-bio {
 width: 50%;  
 padding: 9em 0;
-z-index: 1;
-  
+z-index: 1; 
 }
-  .cabrina-bio h4 {  
-    font-size: 3em;
-      
-  }
+
+.cabrina-bio h4 {  
+font-size: 3em;
+}
+    
+.container {
+width: 85%;
+max-width: 750px;
+margin: 0 auto;
+background: none;
+z-index: 2;
+font-size: 1.15em;
+line-height: 1.5;
+}
     
 .first{
 font-weight: bold;
@@ -1278,7 +1086,7 @@ font-weight: bold;
 
 .cabrina-pic {
 width: 50%;
-  padding: 11em 1em;
+padding: 11em 1em;
 }
     
 .picture-c { 
@@ -1294,57 +1102,34 @@ border-radius: 100%;
 -webkit-box-shadow: 0px 0px 7px 1px rgba(115,115,117,.75);
 -moz-box-shadow: 0px 0px 7px 1px rgba(115,115,117,.75);
 box-shadow: 0px 0px 7px 1px rgba(115,115,117,.75);
-  }
+}
     
 .meet-coach {
 margin: 0 auto;
 width: 50%;
-/*background-color: #82A7BD;*/
-
 padding: 0;
-/*color: white;*/
 border-bottom-left-radius: 4px;
 border-bottom-right-radius: 4px;
 }
-    
-    .meet-coach p {
-     font-size: 1.85em;   
-        
-    }
-    
-    
-.container {
-width: 85%;
-    max-width: 750px;
-margin: 0 auto;
-background: none;
-z-index: 2;
-    font-size: 1.15em;
-    line-height: 1.5;
+
+.meet-coach p {
+font-size: 1.85em;   
 }
-    
-
-    
-
-    
+   
+  
   /*//////////////////////////////////
 Background Images - Desktop///////////////////
 //////////////////////////////////*/   
     
-
-/*
-    
-  #special1,  #special2,
-*/
 #cover1,  #special1,  #special2 {
 background-attachment: fixed; 
 }
     
-    .holder {
-     width: 100%;
-        height: 100%;
-        background: hsla(202, 31%, 63%, .75);
-    }
+.holder {
+width: 100%;
+height: 100%;
+background: hsla(202, 31%, 63%, .75);
+}
 
     
  /*//////////////////////////////////
@@ -1353,67 +1138,64 @@ Section Breaks///////////////////
       
 
     
-.section-break  {
--webkit-flex-flow: row wrap;
-flex-flow: row wrap;
-    padding: 5em 0;
-    }
- .section-break h4 {
-  flex: 1 100%;
-     font-size: 3em;
- }
-  
-.quote-text blockquote, .section-break blockquote {
- font-size: 1.15em;
-    line-height: 1.6;
-    font-weight: 300;
-}
-     
-    
-    .section-break blockquote {
-     text-align: center;   
-    }
-    
-.review {
-width: 50%; 
-padding: 1em 5em 4em 5em;
-    
+.contact-block {
+margin: 0 2.75em 3em 2.75em;
+width: 20%;
 }
     
-    .quote {
+form {
+margin: 0 auto;
+width: 75%;
+max-width: 700px;
+}
+    
+.quote {
 width: 75px;
 height: 75px;
 margin-bottom: -2em;
 }
-
-    form 
-{
- margin: 0 auto;
-    width: 75%;
-    max-width: 700px;
+    
+.review {
+width: 50%; 
+padding: 1em 5em 4em 5em;   
+}
+    
+.section-break  {
+-webkit-flex-flow: row wrap;
+flex-flow: row wrap;
+padding: 5em 0;
+}
+    
+.section-break h4 {
+flex: 1 100%;
+font-size: 3em;
+}
+  
+.quote-text blockquote, .section-break blockquote {
+font-size: 1.15em;
+line-height: 1.6;
+font-weight: 300;
+}
+    
+.section-break blockquote {
+text-align: center;   
 }
     
 .justify {
- justify-content: center;
-    -webkit-justify-content: center;
+justify-content: center;
+-webkit-justify-content: center;
 }
-    
-    .contact-block {
-     margin: 0 2.75em 3em 2.75em;
-     width: 20%;
-    }
 
     
  /*//////////////////////////////////
 Company Review Section///////////////////
 //////////////////////////////////*/  
+
+.company {
+width: 100%;   
+}
     
-    .company {
-     width: 100%;   
-        
-    }
-    
-    .meet-company {
+.meet-company {
 margin: 0 auto;
 width: 100%;
 /*background-color: #82A7BD;*/
@@ -1422,48 +1204,41 @@ color: white;
 border-bottom-left-radius: 4px;
 border-bottom-right-radius: 4px;
 text-align: center;
-        font-size: 3.45em;
-
-    }
+font-size: 3.45em;
+}
     
 /*//////////////////////////////////
 TESTIMONIAL SECTIONS BREAKS///////////////////
 //////////////////////////////////*/
 
-.width {
-
-    padding: 12em 2em;
+    
+.contain-picture {
+padding: .25em .1em;
+border: 1px solid grey;
+border-radius: 4px;
 }
     
-    
+.client-image {
+height: 125px;
+width: 125px;
+}
+   
 .pic-image {
- width: 10%; 
-    margin-left: auto;
+width: 10%; 
+margin-left: auto;
 }
     
 .quote-text {
- width: 70%; 
-    max-width: 650px; 
-    margin-right: auto;
-    z-index: 1;
+width: 70%; 
+max-width: 650px; 
+margin-right: auto;
+z-index: 1;
+}
+   
+.width {
+padding: 12em 2em;
 }
     
-    .client-image {
- height: 125px;
-    width: 125px;
-/*
--webkit-box-shadow: 0px 0px 16px 1px rgba(115,115,117,1);
--moz-box-shadow: 0px 0px 16px 1px rgba(115,115,117,1);
-box-shadow: 0px 0px 16px 1px rgba(115,115,117,1);
-*/
-}
-    
-.contain-picture {
- padding: .25em .1em;
-    border: 1px solid grey;
-    border-radius: 4px;
-/*    background: white;*/
-}
     
 /*//////////////////////////////////
 Contact SECTION ///////////////////
@@ -1474,52 +1249,50 @@ font-size: 4.5em;
 line-height: .5;
 font-weight: 400;
 font-style: normal;
-    height: 90vh;
-    }
+height: 90vh;
+}
 
-.section-break-final p
-    {
+.section-break-final p {
 margin: .5em 0;
 text-shadow: 0px 2px 2px rgba(140, 140, 140, 0.75);
-    }
+}
     
 .section-break-final p.special-goodbye {
 font-size: 2rem;
 font-weight: 300;
-    }
+}
 
 
  /*//////////////////////////////////
 Contact SECTION ///////////////////
 //////////////////////////////////*/    
-       .contact-info h4 {
-        font-size: 3em;
-           font-weight: 300;
-       }
-    
-      .contact-block h5 {
-   font-weight: normal;
-        font-size: 1.85em;
 
-    }
+.contact-info h4 {
+font-size: 3em;
+font-weight: 300;
+}
     
-        .contact-block p {
-        font-size: 2em;
-            font-weight: 300;
-        }
+.contact-block h5 {
+font-weight: normal;
+font-size: 1.85em;
+}
     
-       .contact-info p.left {
-       font-size: 1.15em;
-            line-height: 1.35;  
-   max-width: 525px;
-       }
-    .icon {
- height: 50px;
-    width: 50px;
-/*vertical-align:middle;*/
-/*    line-height: 1.5;*/
-    margin-right: 4px;
-        margin-top: 4px;
+.contact-block p {
+font-size: 2em;
+font-weight: 300;
+}
+    
+.contact-info p.left {
+font-size: 1.15em;
+line-height: 1.35;  
+max-width: 525px;
+}
+    
+.icon {
+height: 50px;
+width: 50px;
+margin-right: 4px;
+margin-top: 4px;
 }
 
 }
